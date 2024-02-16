@@ -84,7 +84,7 @@ a i{
     font-size: 12pt;
 }
 .theme {
-    --bg-color: #0600ff73;
+    --bg-color: #59848e;
     --main-color: #ffffff;
     position: relative;
     display: flex;
@@ -285,7 +285,7 @@ a i{
 
 .btn-flower {
   height: 4em;
-  width: 12em;
+  width: 20em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -479,7 +479,7 @@ a i{
   }
 }
 
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 </style>
 
@@ -663,7 +663,7 @@ a i{
                         </div>
                         <div class="col-auto d-none d-lg-block">
                             <div class="header-button">
-                                <button class="button">
+                                <button style="font-weight: bold" class="button">
                                     Agendar
                                     <div class="icon-1">
                                       <svg
@@ -753,7 +753,7 @@ a i{
                 </video>
 
                 <!-- Adicione outros elementos acima do vídeo -->
-                <div class="container" style="position: absolute; top: 35%; left: 48%; transform: translate(-50%, -50%); z-index: 2; text-align: center;">
+                <div class="container" style="position: absolute; top: 40%; left: 48%; transform: translate(-50%, -50%); z-index: 2; text-align: center;">
 
                     <div style="display: flex; justify-content: center; align-items: center; align-content: center; padding: 398px 0 60px;" class="hero-style2">
                         <img style="margin-right: 3%;" src="{{ asset('assets/logo4.png') }}" alt="Logo">
@@ -788,7 +788,7 @@ a i{
                                 <div class="petal three"></div>
                                 <div class="petal four"></div>
                               </div>
-                              <p style="background: transparent; color:rgb(255, 255, 255); z-index: 6; font-size: 25pt; display: flex; letter-spacing:3pt;" class="">Começar</p>
+                              <p style='background: transparent; color:rgb(255, 255, 255); z-index: 6; font-size: 25pt; display: flex; letter-spacing:2pt; font-weight: 600; margin-top: 8%;'class="">Horários</p>
                               <div class="flower flower4">
                                 <div class="petal one"></div>
                                 <div class="petal two"></div>
