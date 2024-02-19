@@ -664,7 +664,7 @@ a i{
                         <div class="col-auto d-none d-lg-block">
                             <div class="header-button">
                                 <button style="font-weight: bold" class="button">
-                                    Agendar
+                                    Login
                                     <div class="icon-1">
                                       <svg
                                         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -788,7 +788,7 @@ a i{
                                 <div class="petal three"></div>
                                 <div class="petal four"></div>
                               </div>
-                              <p style='background: transparent; color:rgb(255, 255, 255); z-index: 6; font-size: 25pt; display: flex; letter-spacing:2pt; font-weight: 600; margin-top: 8%;'class="">Horários</p>
+                              <p style='background: transparent; color:rgb(255, 255, 255); z-index: 6; font-size: 25pt; display: flex; letter-spacing:2pt; font-weight: 600; margin-top: 8%;'class="">Agendar</p>
                               <div class="flower flower4">
                                 <div class="petal one"></div>
                                 <div class="petal two"></div>
