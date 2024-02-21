@@ -481,6 +481,52 @@ a i{
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+.videoLeFLower{
+    width: 100%;
+    height: auto;
+}
+
+.logoVideo{
+    display: none;
+    margin-right: 3%;
+}
+
+.hero-style2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 398px 0 60px;
+}
+
+@media (max-width: 700px){
+    .hero2{
+        height: 650px;
+    }
+
+    .hero-slider{
+        height: 650px;
+    }
+
+    .videoLeFLower{
+        display: none;
+    }
+
+    .hero-slider video{
+        display: none;
+    }
+
+    .logoVideo{
+        display: contents;
+    }
+
+    .hero-style2{
+        display: none;
+    }
+}
+
+
+
 </style>
 
 <body>
@@ -748,15 +794,15 @@ a i{
             <div class="hero-slider" style="position: relative;">
 
                 <!-- Adicione o vídeo -->
-                <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                <video class="videoLeFlower" autoplay muted loop playsinline style="">
                     <source src="{{asset('assets/videos/a1e9727e-c0c9-46ab-a382-e0fd61b5ff73.mov')}}" type="video/mp4">
                 </video>
 
                 <!-- Adicione outros elementos acima do vídeo -->
                 <div class="container" style="position: absolute; top: 40%; left: 48%; transform: translate(-50%, -50%); z-index: 2; text-align: center;">
 
-                    <div style="display: flex; justify-content: center; align-items: center; align-content: center; padding: 398px 0 60px;" class="hero-style2">
-                        <img style="margin-right: 3%;" src="{{ asset('assets/logo4.png') }}" alt="Logo">
+                    <div style="" class="hero-style2">
+                        <img class="logoVideo" src="{{ asset('assets/logo4.png') }}" alt="Logo">
                         <div>
                         <span class="hero-subtitle fw-medium" data-ani="slideinup" data-ani-delay="0s">É aqui onde sua</span>
                         <h1 class="hero-title text-white" data-ani="slideinup" data-ani-delay="0.1s">BELEZA</h1>
