@@ -505,7 +505,9 @@ a i{
     }
 
     .hero-slider{
-        height: 650px;
+        height: 550px;
+        background: url('assets/banner/bannerRespons.jpeg');
+        background-size: cover;
     }
 
     .videoLeFLower{
@@ -523,9 +525,48 @@ a i{
     .hero-style2{
         display: none;
     }
+
+    .btn-flower{
+      margin-top: 130%;
+    }
 }
 
+.widget-area{
+    padding: 1% 12%;
+}
 
+.about-text{
+    font-size: 11pt;
+    color: gainsboro;
+}
+
+.social-btn{
+    gap: 20%;
+}
+
+.footer-widget .wp-block-search__label, .footer-widget .widget_title {
+   max-width: 100%;
+   color: var(--white-color);
+   border-bottom: none;
+   margin: -0.04em 0 50px 0;
+   font-size: 22px;
+   font-weight: 500;
+   position: relative;
+}
+
+.footer-widget .widget_title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 3px;
+    width: 100%;
+    background: #D9D9D9;
+}
+
+.widget_title{
+    text-align: center;
+}
 
 </style>
 
@@ -880,17 +921,17 @@ a i{
         Footer Area
     ==============================-->
     <footer class="footer-wrapper footer-layout1" data-bg-src="assets/img/bg/footer-1-bg.png">
-        <div class="container">
+        <div style="padding 1% 0%;" class="container-fluid">
             <div class="widget-area">
                 <div class="row justify-content-between">
-                    <div class="col-md-6 col-xl-3">
+                    <div style="padding: 5% 0%;" class="col-md-6 col-xl-3">
                         <div class="widget footer-widget">
                             <div class="widget-about">
                                 <div class="footer-logo">
                                     <a href="/"><img src="{{ asset('assets/logo4.png') }}" alt="Viva Bem"></a>
                                 </div>
                                 <p class="about-text">Junte-se a nós e descubra um ambiente que vai além dos limites convencionais da preparação física. Oferecemos não apenas equipamentos de última geração, mas uma comunidade que incentiva o seu crescimento pessoal.</p>
-                                <div class="social-btn">
+                                <div style="margin-left:10%;" class="social-btn">
                                     <a href="https://twitter.com/" tabindex="0"><i class="fab fa-twitter"></i></a>
                                     <a href="https://linkedin.com/" tabindex="0"><i class="fab fa-linkedin-in"></i></a>
                                     <a href="https://www.discord.com/" tabindex="0"><i class="fab fa-discord"></i></a>
@@ -898,7 +939,7 @@ a i{
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-auto">
+                    <div style="padding: 10% 0%;" class="col-md-6 col-xl-auto">
                         <div class="widget widget_nav_menu footer-widget">
                             <h3 class="widget_title">Link Rápidos</h3>
                             <div class="menu-all-pages-container">
@@ -912,38 +953,38 @@ a i{
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-auto">
-                        <div class="widget footer-widget">
+                    <div style="padding: 10% 0%;" class="col-md-6 col-xl-auto">
+                        <div class="widget footer-widget" style="max-width: 400px;">
                             <h3 class="widget_title">Galeria</h3>
-                            <div class="sidebar-gallery">
+                            <div class="sidebar-gallery" style="">
                                 <div class="gallery-thumb">
-                                    <img src="{{ asset('assets/instaFooter/75.1.png') }}" alt="Gallery Image">
-                                    <a href="assets/img/widget/insta-feed1.png" class="gallery-btn popup-image"><i class="fab fa-instagram"></i></a>
+                                    <img src="{{ asset('assets/Galeria/Cabelos.jpeg') }}" alt="Gallery Image">
+                                    <a href="{{ asset('assets/Galeria/Cabelos.jpeg') }}" class="gallery-btn popup-image"><i class="fab fa-instagram"></i></a>
                                 </div>
                                 <div class="gallery-thumb">
-                                    <img src="{{ asset('assets/instaFooter/75.2.png') }}" alt="Gallery Image">
-                                    <a href="assets/img/widget/insta-feed2.png" class="gallery-btn popup-image"><i class="fab fa-instagram"></i></a>
+                                    <img src="{{ asset('assets/Galeria/Maquiagem.jpeg') }}" alt="Gallery Image">
+                                    <a href="{{ asset('assets/Galeria/Maquiagem.jpeg') }}" class="gallery-btn popup-image"><i class="fab fa-instagram"></i></a>
                                 </div>
                                 <div class="gallery-thumb">
-                                    <img src="{{ asset('assets/instaFooter/75.3.png') }}" alt="Gallery Image">
-                                    <a href="assets/img/widget/insta-feed3.png" class="gallery-btn popup-image"><i class="fab fa-instagram"></i></a>
+                                    <img src="{{ asset('assets/Galeria/Unhas.jpeg') }}" alt="Gallery Image">
+                                    <a href="{{ asset('assets/Galeria/Unhas.jpeg') }}" class="gallery-btn popup-image"><i class="fab fa-instagram"></i></a>
                                 </div>
                                 <div class="gallery-thumb">
-                                    <img src="{{ asset('assets/instaFooter/75.4.png') }}" alt="Gallery Image">
-                                    <a href="assets/img/widget/insta-feed4.png" class="gallery-btn popup-image"><i class="fab fa-instagram"></i></a>
+                                    <img src="{{ asset('assets/Galeria/Cabelos2.jpeg') }}" alt="Gallery Image">
+                                    <a href="{{ asset('assets/Galeria/Cabelos2.jpeg') }}" class="gallery-btn popup-image"><i class="fab fa-instagram"></i></a>
                                 </div>
                                 <div class="gallery-thumb">
-                                    <img src="{{ asset('assets/instaFooter/75.5.png') }}" alt="Gallery Image">
-                                    <a href="assets/img/widget/insta-feed5.png" class="gallery-btn popup-image"><i class="fab fa-instagram"></i></a>
+                                    <img src="{{ asset('assets/Galeria/Maquiagem2.jpeg') }}" alt="Gallery Image">
+                                    <a href="{{ asset('assets/Galeria/Maquiagem2.jpeg') }}" class="gallery-btn popup-image"><i class="fab fa-instagram"></i></a>
                                 </div>
                                 <div class="gallery-thumb">
-                                    <img src="{{ asset('assets/instaFooter/75.6.png') }}" alt="Gallery Image">
-                                    <a href="assets/img/widget/insta-feed6.png" class="gallery-btn popup-image"><i class="fab fa-instagram"></i></a>
+                                    <img src="{{ asset('assets/Galeria/Unhas2.jpeg') }}" alt="Gallery Image">
+                                    <a href="{{ asset('assets/Galeria/Unhas2.jpeg') }}" class="gallery-btn popup-image"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-3">
+                    <div class="col-md-6 col-xl-3" style="padding: 10% 0%;">
                         <div class="widget footer-widget">
                             <h3 class="widget_title">Receba boletim informativo</h3>
                             <p class="footer-text">Ganhe 10% de desconto no seu primeiro pedido! Se apresse</p>

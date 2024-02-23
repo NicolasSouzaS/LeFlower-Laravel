@@ -233,8 +233,6 @@
 }
 
 
-
-
 }
 
 @media (min-width: 701px) and (max-width:1024px){
