@@ -393,9 +393,9 @@
                 <div class="row gy-5 justify-content-center">
                     <div class="col-md-6 container2">
                         <div class="about-thumb-2">
-                            <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/Galeria/Cabelos2.jpeg') }}" alt="img">
+                            <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Escova.jpeg') }}" alt="img">
                             <div class="about-thumb-num">
-                                Unhas
+                                Progressivas
                             </div>
                         </div>
                     </div>

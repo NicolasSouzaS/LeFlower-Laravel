@@ -728,9 +728,9 @@ a i{
                                         <a href="/sobre">Sobre</a>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="/servico">Serviços</a>
+                                        <a href="/servico/cabelo">Serviços</a>
                                         <ul class="sub-menu">
-                                            <li><a href="/servico">Serviço</a></li>
+                                            <li><a href="/servico/cabelo">Serviço</a></li>
                                             <li><a href="service-details.html">Detalhes De Serviço</a></li>
                                         </ul>
                                     </li>
