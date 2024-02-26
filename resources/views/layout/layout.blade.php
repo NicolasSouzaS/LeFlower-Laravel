@@ -568,6 +568,14 @@ a i{
     text-align: center;
 }
 
+@media (min-width: 701px) and (max-width:1024px){
+    .widget-area {
+    padding: 1% 28%;
+    text-align: center;
+
+}
+}
+
 </style>
 
 <body>

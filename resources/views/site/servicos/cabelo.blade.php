@@ -230,18 +230,6 @@
         border-radius: 20px;
     }
 
-    .about-thumb-num {
-        position: absolute;
-        left: 40px;
-        bottom: 0;
-        font-size: 17pt;
-        font-weight: 700;
-        font-family: var(--title-font);
-        color: transparent;
-        -webkit-text-stroke: 1px var(--white-color);
-        line-height: initial;
-    }
-
     </style>
    <div style="margin-top: 5%;" class="row justify-content-center">
         <div class="col-xl-6 col-lg-8 text-center">
@@ -253,7 +241,7 @@
     </div>
     <section class="selecao">
         <div class="list-group">
-            <a href="/servico/cabelo" class="list-group-item list-group-item-action active" aria-current="true">
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
               Cabelos
             </a>
             <a href="#" class="list-group-item list-group-item-action">Maquiagens</a>
@@ -286,7 +274,7 @@
                     <div class="col-md-6  order-xl-2 container1">
                         <div class="about-thumb-2">
                             <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Cabelo.jpeg') }}" alt="img">
-                            <div style="font-size: 7pt;" class="about-thumb-num">
+                            <div class="about-thumb-num">
                                 Cabelos
                             </div>
                         </div>
@@ -401,15 +389,11 @@
                 </div>
             </div>
         </div>
-        <div class="" data-bg-src="assets/img/bg/about3-bg.png">
-            <div class="text-center">
-                <span class="sub-title" style="font-size: 13pt">Unhas</span>
-            </div>
             <div class="container-fluid servico" style="display: flex;">
                 <div class="row gy-5 justify-content-center">
                     <div class="col-md-6 container2">
                         <div class="about-thumb-2">
-                            <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Unhas.jpeg') }}" alt="img">
+                            <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/Galeria/Cabelos2.jpeg') }}" alt="img">
                             <div class="about-thumb-num">
                                 Unhas
                             </div>
@@ -419,13 +403,13 @@
                     <div class="col-md-6 ">
                         <div style="" class="card-menu2">
                             <div class="card-header bg-transparent border-0">
-                                <h3 class="sec-title text-white">Menu de Serviços de Unhas</h3>
+                                <h3 class="sec-title text-white">Escovas Progressivas</h3>
                             </div>
 
                             <div class="card-body">
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title text-white">Luzes para Cabelo</h4>
+                                        <h4 class="service-title text-white">Escova marroquina</h4>
                                         <h4>R$ 349,99</h4>
                                     </div>
                                     <p class="service-description">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
@@ -434,7 +418,7 @@
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title text-white">Prancha</h4>
+                                        <h4 class="service-title text-white">Escova americana</h4>
                                         <h4>R$ 59,99</h4>
                                     </div>
                                     <p class="service-description">Alise seus cabelos para um visual elegante e polido.</p>
@@ -443,7 +427,7 @@
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title text-white">Penteados</h4>
+                                        <h4 class="service-title text-white">Escova indiana</h4>
                                         <h4>R$ 199,99</h4>
                                     </div>
                                     <p class="service-description">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
@@ -452,7 +436,7 @@
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title text-white">Progressiva</h4>
+                                        <h4 class="service-title text-white">Escova inteligente</h4>
                                         <h4>R$ 269,99</h4>
                                     </div>
                                     <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>
@@ -524,17 +508,13 @@
                 </div>
             </div>
         </div>
-        <div class="space" data-bg-src="assets/img/bg/about3-bg.png">
-            <div class="text-center">
-                <span class="sub-title" style="font-size: 13pt">Maquiagem</span>
-            </div>
             <div class="container-fluid servico" style="display: flex;">
                 <div class="row gy-5 justify-content-center">
                     <div class="col-md-6  order-xl-2 container3">
                         <div class="about-thumb-2">
-                            <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Maquiagem3.jpeg') }}" alt="img">
+                            <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Luzes.jpeg') }}" alt="img">
                             <div class="about-thumb-num">
-                                Maquiagem
+                                Cabelos Loiros
                             </div>
                         </div>
                     </div>
@@ -542,13 +522,13 @@
                     <div class="col-md-6  order-xl-1">
                         <div class="card-menu">
                             <div class="card-header bg-transparent border-0">
-                                <h3 class="sec-title text-white">Menu de Serviços de Cabelo</h3>
+                                <h3 style="" class="sec-title text-white">Luzes</h3>
                             </div>
 
                             <div class="card-body">
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title text-white">Luzes para Cabelo</h4>
+                                        <h4 class="service-title text-white">Luzes</h4>
                                         <h4>R$ 349,99</h4>
                                     </div>
                                     <p class="service-description">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
@@ -557,7 +537,7 @@
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title text-white">Prancha</h4>
+                                        <h4 class="service-title text-white">Mechas</h4>
                                         <h4>R$ 59,99</h4>
                                     </div>
                                     <p class="service-description">Alise seus cabelos para um visual elegante e polido.</p>
@@ -566,7 +546,7 @@
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title text-white">Penteados</h4>
+                                        <h4 class="service-title text-white">Californianas</h4>
                                         <h4>R$ 199,99</h4>
                                     </div>
                                     <p class="service-description">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
@@ -575,7 +555,7 @@
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title text-white">Progressiva</h4>
+                                        <h4 class="service-title text-white">Ombré hair</h4>
                                         <h4>R$ 269,99</h4>
                                     </div>
                                     <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>

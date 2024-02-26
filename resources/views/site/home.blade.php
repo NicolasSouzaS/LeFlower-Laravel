@@ -296,7 +296,17 @@
 }
 }
 
-
+.about-thumb-num {
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+    font-size: 17pt;
+    font-weight: 700;
+    font-family: var(--title-font);
+    color: transparent;
+    -webkit-text-stroke: 1px var(--white-color);
+    line-height: initial;
+}
 
 </style>
 

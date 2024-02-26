@@ -8867,7 +8867,7 @@ span.select2-selection.select2-selection--single:focus {
   position: absolute;
   left: 40px;
   bottom: 0;
-  font-size: 120px;
+  font-size: 65pt;
   font-weight: 700;
   font-family: var(--title-font);
   color: transparent;
