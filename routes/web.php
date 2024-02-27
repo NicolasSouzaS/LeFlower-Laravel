@@ -27,7 +27,18 @@ Route::get('/servico', [ServicoController::class, 'index'])->name('servico');
 
 // Serviços
 
-Route::get('/servico/cabelo', [ServicoController::class, 'servicoCabelo'])->name('servicoCabelo');
+Route::get('/servico/cabelos', [ServicoController::class, 'servicoCabelo'])->name('servicoCabelo');
+Route::get('/servico/maquiagens', [ServicoController::class, 'servicoMaquiagem'])->name('servicoMaquiagem');
+Route::get('/servico/barbas', [ServicoController::class, 'servicoBarba'])->name('servicoBarba');
+Route::get('/servico/cilios', [ServicoController::class, 'servicoCilios'])->name('servicoCilios');
+Route::get('/servico/massagens', [ServicoController::class, 'servicoMassagem'])->name('servicoMassagens');
+Route::get('/servico/unhas', [ServicoController::class, 'servicoUnha'])->name('servicoUnhas');
+Route::get('/servico/rosto', [ServicoController::class, 'servicoRosto'])->name('servicoRosto');
+Route::get('/servico/depilacao', [ServicoController::class, 'servicoDepilacao'])->name('servicoDepilacoes');
+Route::get('/servico/sobrancelhas', [ServicoController::class, 'servicoSobrancelha'])->name('servicoSobrancelhas');
+
+
+
 
 
 
