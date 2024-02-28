@@ -811,6 +811,8 @@ a i{
                         </div>
                         <div class="col-auto d-none d-lg-block">
                             <div class="header-button">
+                                {{-- Botão de login --}}
+                                <a href="{{ route('cadastroCliente') }}">
                                 <button style="font-weight: bold" class="button">
                                     Login
                                     <div class="icon-1">
@@ -871,6 +873,7 @@ a i{
                                       </svg>
                                     </div>
                                   </button>
+                                </a>
 
                                 <button type="button" class="btn style-r0 btn-border3 sideMenuToggler">
                                     <i class="far fa-bars"></i>
