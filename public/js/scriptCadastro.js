@@ -650,6 +650,8 @@ function cadastrarClientesForm() {
     const inputSenhaUsuario = document.getElementById("senhaUsuario").value;
     const inputEmailUsuario = document.getElementById("emailUsuario").value;
 
+
+
     fetch("http://127.0.0.1:30021/insert/usuario", {
         method: "POST",
         headers: {
@@ -658,7 +660,8 @@ function cadastrarClientesForm() {
         body: JSON.stringify({
             nomeUsuario: inputNomeUsuario,
             senhaUsuario: inputSenhaUsuario,
-            emailUsuario: inputEmailUsuario
+            emailUsuario: inputEmailUsuario,
+            
         })
     })
     .then(response => response.json())

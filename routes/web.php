@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CadastroController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ServicoController;
 use Illuminate\Support\Facades\Route;
 
@@ -25,6 +26,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/servico', [ServicoController::class, 'index'])->name('servico');
 Route::get('/cadastrar-se', [CadastroController::class, 'index'])->name('cadastroCliente');
+Route::get('/login', [LoginController::class, 'index'])->name('login');
 
 
 // Serviços
@@ -41,6 +43,6 @@ Route::get('/servico/sobrancelhas', [ServicoController::class, 'servicoSobrancel
 
 
 // Rota de cadastro de usuário
-Route::post('/cadastro', [CadastroController::class, 'cadastroCliente'])->name('cadastro.store');
+Route::post('/login', [CadastroController::class, 'cadastroCliente'])->name('cadastro.store');
 
 

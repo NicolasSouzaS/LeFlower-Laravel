@@ -1,180 +1,293 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Cadastro Cliente - Le Flower</title>
-    <meta name="description" content="Fitmas - Gym & Fitness HTML Template">
-    <meta name="keywords" content="Fitmas - Gym & Fitness HTML Template">
-    <meta name="robots" content="INDEX,FOLLOW">
-
-    <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Favicons - Place favicon.ico in the root directory -->
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/logo.png') }}">
-    <link rel="manifest" href="{{ asset('assets/img/favicons/manifest.json') }}">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="{{ asset('assets/logo.png') }}">
-    <meta name="theme-color" content="#ffffff">
-
+	<title>Formulário de login </title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-
-    <!--==============================
-	  Google Fonts
-	============================== -->
-    <link rel="preconnect" href="{{ asset('https://fonts.googleapis.com') }}">
-    <link rel="preconnect" href="{{ asset('https://fonts.gstatic.com') }}" crossorigin>
-    <link href="{{ asset('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&family=Kumbh+Sans:wght@300;400;500;600;700&display=swap') }}" rel="stylesheet">
-
-    <!--==============================
-	    All CSS File
-	============================== -->
-    <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
-    <!-- Fontawesome Icon -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/fontawesome.min.css') }}">
-    <!-- Magnific Popup -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/magnific-popup.min.css' ) }}">
-    <!-- Slick Slider -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/slick.min.css') }}">
-    <!-- Flip Slider -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.flipster.min.css') }}">
-    <!-- Theme Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
-
 </head>
-
-<style>
-    .header-top{
-        height: 90px;
-    }
-
-    .header-top nav{
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .header-top nav img{
-        width: 100px;
-    }
-
-    .hero-wrapper{
-        height: 1000px;
-        width: 1920px;
-    }
-
-    .hero-3:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(to right, rgba(0,0,0,0.9), transparent);
-    mix-blend-mode: hard-light;
-    }
-</style>
-
 <body>
 
-        <header class="nav-header header-layout2">
-            <div class="header-top d-lg-block d-none">
-                <nav>
-                    <a href="/"><img src="{{ asset('assets/logo.png') }}" alt="Le Flower"></a>
-                </nav>
-            </div>
-        </header>
+<style>
+    *{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 
-            <div class="hero-wrapper hero-3 background-image" id="hero" style="background-image: url(&quot;assets/banner/bannerFlores.jpeg&quot;);">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-7">
-                            <div class="hero-style3">
-                                <h1 class="hero-title text-white">REDEFINE YOUR LIMITS, EMBRACE THE JOURNEY.</h1>
-                            </div>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="appointment-form bg-white">
-                                <h4 class="form-title">Cadastrando:</h4>
-                                <form action="javascript:void"
-                                method="POST" class="bmi-form ajax-contact">
-                                @csrf
-                                    <div class="form-group">
-                                        <input type="text" class="form-control style-border2" name="nomeUsuario" id="nomeUsuario" placeholder="Nome Completo">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control style-border2" name="senhaUsuario" id="senhaUsuario" placeholder="Senha">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control style-border2" name="emailUsuario" id="emailUsuario" placeholder="Email">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="tel" class="form-control style-border2" name="telefoneUsuario" id="telefoneUsuario" placeholder="Telefone">
-                                    </div>
-                                    <div class="form-btn col-12">
-                                        <button onclick="cadastrarClientesForm()" id="btnEnviarFormUser" class="btn fw-bold style5 w-100">MAKE APPOINTMENT</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.wave{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	z-index: -1;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap :7rem;
+    padding: 0 2rem;
+}
+
+.img{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.login-content{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+}
+
+.img img{
+	width: 500px;
+}
+
+form{
+	width: 360px;
+}
+
+.login-content img{
+    height: 100px;
+}
+
+.login-content h2{
+	margin: 15px 0;
+	color: #333;
+	font-size: 2.9rem;
+}
+
+.login-content .input-div{
+	position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.login-content .input-div.one{
+	margin-top: 0;
+}
+
+.i{
+	color: #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.i i{
+	transition: .3s;
+}
+
+.input-div > div{
+    position: relative;
+	height: 45px;
+}
+
+.input-div > div > h5{
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #999;
+	font-size: 18px;
+	transition: .3s;
+}
+
+.input-div:before, .input-div:after{
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 0%;
+	height: 2px;
+	background-color: #36a3be;
+	transition: .4s;
+}
+
+.input-div:before{
+	right: 50%;
+}
+
+.input-div:after{
+	left: 50%;
+}
+
+.input-div.focus:before, .input-div.focus:after{
+	width: 50%;
+}
+
+.input-div.focus > div > h5{
+	top: -5px;
+	font-size: 15px;
+}
+
+.input-div.focus > .i > i{
+	color: #38d39f;
+}
+
+.input-div > div > input{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.2rem;
+	color: #555;
+	font-family: 'poppins', sans-serif;
+}
+
+a{
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	color: #999;
+	font-size: 0.9rem;
+	transition: .3s;
+}
+
+a:hover{
+	color: #38d39f;
+}
+
+.btn{
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #329dbe, #398fb8, #37aeb3);
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+.btn:hover{
+	background-position: right;
+}
+
+
+@media screen and (max-width: 1050px){
+	.container{
+		grid-gap: 5rem;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	form{
+		width: 290px;
+	}
+
+	.login-content h2{
+        font-size: 2.4rem;
+        margin: 8px 0;
+	}
+
+	.img img{
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.container{
+		grid-template-columns: 1fr;
+	}
+
+	.img{
+		display: none;
+	}
+
+	.wave{
+		display: none;
+	}
+
+	.login-content{
+		justify-content: center;
+	}
+}
+
+</style>
+
+	<img class="wave" src="{{ asset('assets/wave (2).png')}}">
+	<div class="container">
+		<div class="img">
+			<img src="{{ asset('assets/Beauty salon-bro.svg')}}">
+		</div>
+		<div class="login-content">
+			<form action="{{ route('cadastro.store') }}" method="POST">
+                @csrf
+				<img style="width: 60%;height:60%;" src="{{ asset('assets/logo4.png') }}">
+				<h2 class="title">Entrar</h2>
+
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<input type="text" name="nomeUsuario" id="nomeUsuario" class="input" placeholder="Nome Completo">
+           		   </div>
+           		</div>
+
+                   <div class="input-div pass">
+                    <div class="i">
+                         <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                         <input type="password" name="senhaUsuario" id="senhaUsuario" class="input" placeholder="Senha">
                     </div>
                 </div>
-            </div>
+                   <div class="input-div one">
+                    <div class="i">
+                            <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="div">
+                            <input type="text" class="input" name="emailUsuario" id="emailUsuario" placeholder="Email">
+                    </div>
+                 </div>
+                 <div class="input-div one">
+                    <div class="i">
+                            <i class="fas fa-mobile"></i>
+                    </div>
+                    <div class="div">
+                            <input type="text" class="input" name="telefoneUsuario" id="telefoneUsuario" placeholder="Telefone">
+                    </div>
+                 </div>
 
+            	<input style="margin-top: 7%;" type="submit" class="btn" value="Login">
+                <div style="text-align:center;">
+                    <p>Já possui conta ?<a style="text-align: center;" href="/login">Faça Login</a></p>
+                </div>
+            </form>
 
-
-
-
-
-    <script src="{{ asset('js/vendor/jquery-3.6.0.min.js') }}"></script>
-    <!-- Slick Slider -->
-    <script src="{{ asset('js/slick.min.js') }}"></script>
-    <!-- Bootstrap -->
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <!-- Magnific Popup -->
-    <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
-    <!-- Counter Up -->
-    <script src="{{ asset('js/jquery.counterup.min.js') }}"></script>
-    <!-- Range Slider -->
-    <script src="{{ asset('js/jquery-ui.min.js') }}"></script>
-    <!-- Flip Slider -->
-    <script src="{{ asset('js/jquery.flipster.min.js') }}"></script>
-    <!-- Isotope Filter -->
-    <script src="{{ asset('js/imagesloaded.pkgd.min.js') }}"></script>
-    <script src="{{ asset('js/isotope.pkgd.min.js') }}"></script>
-
-    <script src="{{ asset('js/bmi.calculator.js') }}"></script>
-
-    <!-- Main Js File -->
-    <script src="{{ asset('js/main.js') }}"></script>
-
-    <script src="{{ asset('js/script.js') }}"></script>
+        </div>
+    </div>
     <script src="{{ asset('js/scriptCadastro.js') }}"></script>
-    <script src="../index.js"></script>
-    <script src="..index.js"></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const darkModeToggle = document.getElementById('darkModeToggle');
-            const body = document.body;
-
-            // Evento de mudança no botão de alternância do modo escuro
-            darkModeToggle.addEventListener('change', function () {
-                body.classList.toggle('dark-mode', darkModeToggle.checked);
-                localStorage.setItem('darkMode', darkModeToggle.checked);
-            });
-
-            // Verificar e aplicar o estado do modo escuro ao carregar a página
-            const savedDarkMode = localStorage.getItem('darkMode') === 'true';
-            darkModeToggle.checked = savedDarkMode;
-            body.classList.toggle('dark-mode', savedDarkMode);
-        });
-        </script>
-
-
+    <script type="text/javascript" src="{{ asset('js/mainlogin.js') }}"></script>
 </body>
 </html>
+
+
+

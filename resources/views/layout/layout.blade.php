@@ -44,6 +44,11 @@
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
 
+    <link rel="stylesheet" href="{{ asset('css/estilo-gaby.css') }}">
+
+    {{-- Meu css --}}
+    {{-- LINK AOS CSS --}}
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <style>
@@ -812,7 +817,7 @@ a i{
                         <div class="col-auto d-none d-lg-block">
                             <div class="header-button">
                                 {{-- Botão de login --}}
-                                <a href="{{ route('cadastroCliente') }}">
+                                <a href="/login">
                                 <button style="font-weight: bold" class="button">
                                     Login
                                     <div class="icon-1">
@@ -980,6 +985,7 @@ a i{
         ==============================-->
         <main>
             @yield('conteudo')
+            @yield('galeria')
         </main>
     <!--==============================
         Footer Area
@@ -1113,6 +1119,12 @@ a i{
 
     <script src="{{ asset('js/script.js') }}"></script>
 
+    {{-- SCRIPT AOS --}}
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+        AOS.init();
+      </script>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const darkModeToggle = document.getElementById('darkModeToggle');
@@ -1130,6 +1142,8 @@ a i{
             body.classList.toggle('dark-mode', savedDarkMode);
         });
         </script>
+
+
 
 </body>
 

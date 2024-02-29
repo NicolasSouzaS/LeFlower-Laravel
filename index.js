@@ -1,6 +1,8 @@
 //importação do módulo gerenciador de ambiente
 require("dotenv").config();
 
+const router = express.Router();
+
 const nodemailer = require("nodemailer");
 
 //importar o express
@@ -94,8 +96,8 @@ app.post("/enviar-email", (req, res) => {
   });
 });
 
-app.get("/list/clientes", (req, res) => {
-  con.query("SELECT * FROM cliente", (error, result) => {
+app.get("/list/usuarios", (req, res) => {
+  con.query("SELECT * FROM tblusuarios", (error, result) => {
     if (!error) {
       return res.status(200).send({ output: "Ok", data: result });
     } else
@@ -321,6 +323,21 @@ function verificaToken(req, res, next) {
     }
   });
 }
+
+router.get('/insert/usuario/maxid', async (req, res) => {
+    try {
+        const [rows, fields] = await db.execute("SELECT MAX(idUsuario) FROM tblusuarios");
+        const maxId = rows[0]['MAX(idUsuario)'];
+        res.json({ maxId });
+    } catch (error) {
+        console.error("Erro ao obter o maior ID de usuário:", error);
+        res.status(500).json({ error: "Erro ao obter o maior ID de usuário" });
+    }
+});
+
+// Exporte o router para uso em seu aplicativo
+module.exports = router;
+
 
 //vamos definir a porta de comunicação do servidor
 app.listen(process.env.PORT, () =>
