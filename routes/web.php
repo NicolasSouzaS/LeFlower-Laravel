@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CadastroController;
+use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\EsteticaController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ServicoController;
@@ -27,6 +30,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/servico', [ServicoController::class, 'index'])->name('servico');
 Route::get('/cadastrar-se', [CadastroController::class, 'index'])->name('cadastroCliente');
 Route::get('/login', [LoginController::class, 'index'])->name('login');
+Route::get('/dashboard/admin', [AdminController::class, 'index'])->name('dashboard.admin');
 
 
 // Serviços
@@ -43,6 +47,20 @@ Route::get('/servico/sobrancelhas', [ServicoController::class, 'servicoSobrancel
 
 
 // Rota de cadastro de usuário
-Route::post('/login', [CadastroController::class, 'cadastroCliente'])->name('cadastro.store');
+Route::post('/cadastrar-se', [CadastroController::class, 'cadastroCliente'])->name('cadastro.store');
+
+// Rota de login de usuario
+Route::post('/login', [LoginController::class, 'autenticar'])->name('login.autenticar');
 
 
+
+// Rotas com middleware
+// Dashboard cliente
+Route::middleware(['autenticacao:cliente'])->group(function(){
+    Route::get('/cliente',[ClienteController::class,'index'])->name('dashboard.cliente');
+});
+Route::middleware(['autenticacao:Administrador'])->group(function(){
+    Route::get('/admin',[AdminController::class,'index'])->name('dashboard.funcionarios.admin');
+});Route::middleware(['autenticacao:Esteticista'])->group(function(){
+    Route::get('/esteticista',[EsteticaController::class,'index'])->name('dashboard.funcionarios.estetica');
+});

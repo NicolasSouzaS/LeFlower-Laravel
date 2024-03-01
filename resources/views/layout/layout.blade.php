@@ -49,6 +49,7 @@
     {{-- Meu css --}}
     {{-- LINK AOS CSS --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ 'path/to/font-awesome/css/font-awesome.min.css' }}">
 </head>
 
 <style>
@@ -806,7 +807,7 @@ a i{
                                 </ul>
                             </nav>
                             <div class="navbar-right d-inline-flex d-lg-none">
-                                <button type="button" class="menu-toggle icon-btn"><i class="far fa-bars"></i></button>
+                                <button type="button" class="menu-toggle icon-btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
                             </div>
                         </div>
                         <div class="col-auto d-xxl-block d-none">

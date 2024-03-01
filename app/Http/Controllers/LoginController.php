@@ -33,7 +33,6 @@ class LoginController extends Controller
         $senhaUsuario = $request->get('senhaUsuario');
 
         $usuario = Usuario::where('emailUsuario', $emailUsuario)->first();
-
         if(!$usuario){
             // Verificando email
             return back()->withErrors(['emailUsuario' => 'O email informado não existe']);
@@ -42,28 +41,42 @@ class LoginController extends Controller
             return back()->withErrors(['senhaUsuario' => 'Senha incorreta']);
         }
 
+
+
         $tipoUsuario = $usuario->tipo_usuario;
 
         session([
             'emailUsuario' => $usuario->emailUsuario,
+            'tipo_usuario' => 'cliente',
             'idUser' => $usuario->idUsuario,
         ]);
 
-        if($tipoUsuario instanceof Cliente){
-            session([
-                'id' => $tipoUsuario->idCliente,
-                'nome' => $tipoUsuario->nomeCliente,
-                'tipoUsuario' => 'cliente',
-            ]);
-            return redirect()->route('dashboard.cliente');
+            if($tipoUsuario instanceof Cliente){
+                session([
+                    'id' => $tipoUsuario->idCliente,
+                    'nome' => $tipoUsuario->nomeCliente,
+                    'tipoUsuario_type' => 'cliente',
+                ]);
+                return redirect()->route('dashboard.cliente');
+            }
+            elseif($tipoUsuario instanceof Funcionario){
+                if($tipoUsuario->nivelFuncionario == 'Administrador'){
+                session([
+                    'id' => $tipoUsuario->idFuncionario,
+                    'nome' => $tipoUsuario->nomeFuncionario,
+                    'nivelFuncionario' => $tipoUsuario->nivelFuncionario,
+                ]);
+                return redirect()->route('dashboard.funcionarios.admin');
+            }
+            elseif($tipoUsuario->nivelFuncionario == 'Estetica'){
+                session([
+                    'id' => $tipoUsuario->idFuncionario,
+                    'nome' => $tipoUsuario->nomeFuncionario,
+                    'nivelFuncionario' => $tipoUsuario->nivelFuncionario,
+                ]);
+                return redirect()->route('dashboard.funcionarios.estetica');
+            }
         }
-        else if($tipoUsuario instanceof Funcionario){
-            session([
-                'id' => $tipoUsuario->idFuncionario,
-                'nome' => $tipoUsuario->nomeFuncionario,
-                ''
-            ]);
-            return redirect()->route('dashboard.funcionario');
-        }
+        return back()->withErrors(['emailUsuario' => 'Erro desconhecido de autenticação']);
     }
 }

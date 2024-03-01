@@ -6,6 +6,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body>
 
@@ -240,7 +241,8 @@ a:hover{
 			<img src="{{ asset('assets/Beauty salon-bro.svg')}}">
 		</div>
 		<div class="login-content">
-			<form action="index.html">
+			<form action="{{ route('login.autenticar') }}" method="POST">
+                @csrf
 				<img style="width: 60%;height:60%;" src="{{ asset('assets/logo4.png') }}">
 				<h2 class="title">Entrar</h2>
            		<div class="input-div one">
@@ -248,8 +250,7 @@ a:hover{
            		   		<i class="fas fa-user"></i>
            		   </div>
            		   <div class="div">
-           		   		<h5>Nome de usuário</h5>
-           		   		<input type="text" class="input">
+           		   		<input type="text" name="emailUsuario" id="emailUsuario" class="input" placeholder="Email">
            		   </div>
            		</div>
            		<div class="input-div pass">
@@ -257,8 +258,7 @@ a:hover{
            		    	<i class="fas fa-lock"></i>
            		   </div>
            		   <div class="div">
-           		    	<h5>Senha</h5>
-           		    	<input type="senha" class="input">
+           		    	<input type="password" name="senhaUsuario" id="senhaUsuario" class="input" placeholder="Senha">
             	   </div>
             	</div>
             	<input style="margin-top: 7%;" type="submit" class="btn" value="Login">

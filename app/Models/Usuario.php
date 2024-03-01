@@ -12,7 +12,8 @@ class Usuario extends Model
     protected $table = 'tblusuarios';
     protected $primaryKey = 'idUsuario';
 
-    public function tipo_usuario(){
+    public function tipo_usuario()
+    {
         return $this->morphTo('tipo_usuario','tipoUsuario_type','tipoUsuario_id');
     }
 }
