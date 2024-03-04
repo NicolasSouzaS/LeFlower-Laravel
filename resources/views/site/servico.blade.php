@@ -37,7 +37,7 @@
 
     .service p {
       margin: 10px 0;
-      color: gainsboro;
+      color: #202020;
     }
 
     .price {
@@ -54,11 +54,11 @@
     }
 
     .service h4{
-        color: white;
+        color: #202020;
     }
 
     .service-description{
-        color: gainsboro;
+        color: #202020;
         text-align: start;
     }
 
@@ -248,14 +248,14 @@
         <div class="col-xl-6 col-lg-8 text-center">
             <div class="title-area text-center">
                 <span class="sub-title text-theme2">CATEGORIAS</span>
-                <h2 style="color: white;" class="sec-title">Selecione a categoria</h2>
+                <h2 style="color: #202020;" class="sec-title">Selecione a categoria</h2>
             </div>
         </div>
     </div>
     <section style="padding:0% 15%;" class="selecao">
         <div class="list-group">
-            <a href="/servico/cabelos" class="list-group-item list-group-item-action active" aria-current="true">
-              Cabelos
+            <a href="/servico/cabelos" class="" aria-current="true">
+                <button class="buttonCat type1">Cabelos</button>
             </a>
             <a href="/servico/maquiagens" class="list-group-item list-group-item-action">Maquiagens</a>
             <a href="/servico/unhas" class="list-group-item list-group-item-action">Unhas</a>

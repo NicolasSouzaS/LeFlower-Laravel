@@ -88,7 +88,7 @@
   --smoke-color5: #F0F2F4;
   --black-color: #202020;
   --gray-color: #303030;
-  --white-color: #ffffff;
+  --white-color:#202020;
   --light-color: #9fa2ad;
   --yellow-color: #FFB539;
   --success-color: #28a745;
@@ -14687,4 +14687,8 @@ body.dark-mode {
 
 .hero-2 {
     clip-path: ellipse(105% 93% at 50%);
+}
+
+.service h4{
+    color: #202020;
 }

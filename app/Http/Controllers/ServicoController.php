@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ServicosModel;
 use Illuminate\Http\Request;
 
 class ServicoController extends Controller
@@ -41,5 +42,13 @@ class ServicoController extends Controller
     }
     public function servico(){
         return view('site.servicos.cabelo');
+    }
+
+    // Ajax Serviço cabelo
+
+    public function AjaxCabelo(){
+        $servicoCabelo = ServicosModel::where('tipoServico', 'Cabelo')->get();
+        
+        return response()->json($servicoCabelo);
     }
 }

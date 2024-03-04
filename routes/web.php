@@ -7,6 +7,7 @@ use App\Http\Controllers\EsteticaController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ServicoController;
+use App\Models\ServicosModel;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -47,7 +48,7 @@ Route::get('/servico/sobrancelhas', [ServicoController::class, 'servicoSobrancel
 
 
 // Rota de cadastro de usuário
-Route::post('/cadastrar-se', [CadastroController::class, 'cadastroCliente'])->name('cadastro.store');
+Route::post('/login', [CadastroController::class, 'cadastroCliente'])->name('cadastro.store');
 
 // Rota de login de usuario
 Route::post('/login', [LoginController::class, 'autenticar'])->name('login.autenticar');
@@ -59,6 +60,17 @@ Route::post('/login', [LoginController::class, 'autenticar'])->name('login.auten
 Route::middleware(['autenticacao:cliente'])->group(function(){
     Route::get('/cliente',[ClienteController::class,'index'])->name('dashboard.cliente');
     Route::get('/agendar',[ClienteController::class,'agendar'])->name('dashboard.agendar');
+
+    // Rota AJAX
+    Route::get('/agendar-cabelo', [ServicoController::class, 'AjaxCabelo'])->name('ajax.cabelo');
+
+
+    Route::get('/servicos', function () {
+        $servicos = ServicosModel::all();
+        return response()->json($servicos);
+    });
+
+
 });
 Route::middleware(['autenticacao:Administrador'])->group(function(){
     Route::get('/admin',[AdminController::class,'index'])->name('dashboard.funcionarios.admin');

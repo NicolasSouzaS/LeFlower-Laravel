@@ -15,7 +15,7 @@
 
 <style>
    .selecao{
-      height: 400px;
+      height: 100px;
       display: flex;
       justify-content: space-around;
       padding: 0% 15%;
@@ -81,6 +81,62 @@
 
 </style>
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+// Quando o botão de cabelo é clicado
+$('#botao-cabelo').click(function(){
+    // Faça uma requisição AJAX para obter os serviços de cabelo
+    $.ajax({
+        url: "/servicos",
+        type: "GET",
+        success: function(response){
+            // Limpe a lista de serviços de cabelo antes de adicionar os novos
+            $('#servicos-cabelo').empty();
+
+            // Adicione cada serviço de cabelo à lista
+            $.each(response, function(index, servico){
+                $('#servicos-cabelo').append(`<div class="row p-1 pb-4 ng-scope ng-isolate-scope" ng-repeat="servico in categoria.servicos | filter:{nome:categoria.filtro}" servico="servico">
+            <div class="col-7 col-sm-6">
+                <span class="textoServicos__titulo ng-binding">${servico.nomeServico}</span>
+                <!-- ngIf: servico.tipo==0 --><span class="textoServicos__horario ng-binding ng-scope" ng-if="servico.tipo==0">${servico.duracaoServico}</span><!-- end ngIf: servico.tipo==0 -->
+                <div class="textoServicos__descricao">
+                    <p ng-class="{collapse: servico.descricao.length >= 100}" class="ng-binding">${servico.descricaoServico}</p>
+                    <!-- ngIf: servico.descricao.length >= 100 -->
+                </div>
+                <!-- ngIf: servico.tipo==1 -->
+            </div>
+            <div class="col-5 col-sm-6">
+                <div class="row">
+                    <preco-servico centralizar="false" class="col-12 col-md-6 mt-3 px-0 ng-isolate-scope" servico="servico">
+                    <!-- ngIf: servico.tipo==0 && exibePrecoAnterior(servico) -->
+            <!-- ngIf: servico.tipo==0 && exibeAPartirDe(servico) --><span class="textoServicos__partirde ng-scope" ng-if="servico.tipo==0 &amp;&amp; exibeAPartirDe(servico)">A partir de:</span><!-- end ngIf: servico.tipo==0 && exibeAPartirDe(servico) -->
+        <div ng-class="{'d-flex justify-content-center': centralizar, 'd-flex justify-content-center justify-content-sm-start': !centralizar}" class="d-flex justify-content-center justify-content-sm-start">
+            <!-- ngIf: servico.tipo==0 && exibePrecoAnterior(servico) -->
+            <!-- ngIf: servico.tipo==0 --><span class="textoServicos__valor ng-binding ng-scope" ng-if="servico.tipo==0">${'R$454'}</span><!-- end ngIf: servico.tipo==0 -->
+            <!-- ngIf: servico.tipo==1 -->
+        </div>
+                </preco-servico>
+                    <!-- ngIf: servico.tipo==0 --><div class="col-12 col-lg-6 ng-scope" ng-if="servico.tipo==0">
+                        <a ng-href="https://www.trinks.com/hands-care/escolha-profissional/7707086" rel="nofollow" tks-notification="selecaoServico" tks-event-details="{servico: servico.nome}" class="card-agendamento__botao card-agendamento__botao--pequeno mt-3 ng-isolate-scope" href="https://www.trinks.com/hands-care/escolha-profissional/7707086">Agendar</a>
+                    </div><!-- end ngIf: servico.tipo==0 -->
+                    <!-- ngIf: servico.tipo==1 -->
+                </div>
+            </div>
+        </div>`);
+                // Adicione outras informações do serviço conforme necessário
+            });
+        },
+        error: function(xhr){
+            console.log(xhr.responseText); // Trate o erro aqui
+        }
+    });
+});
+});
+</script>
+
+
 @section('conteudo')
     <h2 style="color: gainsboro; text-align: center;padding-top:5%;">Agendamento</h2>
 
@@ -88,15 +144,21 @@
 
     <section style="padding:0% 10%; margin-top:4%;" class="selecao">
         <div class="list-group" style="flex-direction: row;">
-            <a href="#" class=""><button class="buttonCat type1">Cabelos</button></a>
-            <a href="#" class=""><button class="buttonCat type1">Maquiagens</button></a>
-            <a href="#" class=""><button class="buttonCat type1">Unhas</button></a>
-            <a href="#" class=""><button class="buttonCat type1">Sobrancelhas</button></a>
-            <a href="#" class=""><button class="buttonCat type1">Depilações</button></a>
-            <a href="#" class=""><button class="buttonCat type1">Massagens</button></a>
-            <a href="#" class=""><button class="buttonCat type1">Rosto</button></a>
-            <a href="#" class=""><button class="buttonCat type1">Barba</button></a>
+            <a href="javascript:void" class=""><button class="buttonCat type1" id="botao-cabelo">Cabelos</button></a>
+            <a href="javascript:void" class=""><button class="buttonCat type1">Maquiagens</button></a>
+            <a href="javascript:void" class=""><button class="buttonCat type1">Unhas</button></a>
+            <a href="javascript:void" class=""><button class="buttonCat type1">Sobrancelhas</button></a>
+            <a href="javascript:void" class=""><button class="buttonCat type1">Depilações</button></a>
+            <a href="javascript:void" class=""><button class="buttonCat type1">Massagens</button></a>
+            <a href="javascript:void" class=""><button class="buttonCat type1">Rosto</button></a>
+            <a href="javascript:void" class=""><button class="buttonCat type1">Barba</button></a>
           </div>
     </section>
+
+    <ul id="servicos-cabelo">
+
+    </ul>
+
+
 
 @endsection

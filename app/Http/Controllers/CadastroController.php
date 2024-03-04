@@ -39,6 +39,7 @@ class CadastroController extends Controller
         $cliente->nomeCliente = $request->input('nomeUsuario');
 
         $usuario->senhaUsuario = $request->input('senhaUsuario');
+        $cliente->senhaCliente = $request->input('senhaUsuario');
 
         $usuario->emailUsuario = $request->input('emailUsuario');
         $cliente->emailCliente = $request->input('emailUsuario');

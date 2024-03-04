@@ -14673,3 +14673,11 @@ span.select2-selection.select2-selection--single:focus {
     background: rgba(0, 0, 0, 0.9); /* Altere o valor de '0.5' para ajustar a intensidade do escurecimento */
     pointer-events: none; /* Permite que você clique através da camada de sobreposição */
 }
+
+.service div h4{
+    color: #202020;
+}
+
+.service-title{
+    color: #202020;
+}

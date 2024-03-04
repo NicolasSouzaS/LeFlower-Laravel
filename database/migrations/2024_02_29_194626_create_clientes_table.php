@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('tblclientes', function (Blueprint $table) {
-            $table->id('idCliente');
+            $table->bigIncrements('idCliente');
             $table->string('nomeCliente', 50);
             $table->string('telefoneCliente', 16);
             $table->string('emailCliente', 100);

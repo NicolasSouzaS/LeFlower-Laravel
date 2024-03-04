@@ -42,7 +42,6 @@
     <!-- Flip Slider -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.flipster.min.css') }}">
     <!-- Theme Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
 
     <link rel="stylesheet" href="{{ asset('css/estilo-gaby.css') }}">
 
@@ -52,12 +51,15 @@
 
     <link rel="stylesheet" href="{{ asset('font-awesome-4.7.0/css/font-awesome.css') }}">
     <link rel="stylesheet" href="{{ asset('font-awesome-4.7.0/css/font-awesome.min.css') }}">
+    
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+
 </head>
 
 <style>
 
 body{
-    background-color: #59848e;
+    background-color: #F3F3F3;
 }
 
     .hero-slider {
@@ -602,7 +604,7 @@ a i{
   border: 2px solid #ffffff;
   overflow: hidden;
   border-radius: 30px;
-  color: gainsboro;
+  color: #202020;
   transition: all 0.5s ease-in-out;
 }
 
@@ -637,6 +639,14 @@ a i{
   transform: scale(100) translateX(2px);
 }
 
+.service-description{
+        color: #202020;
+        text-align: start;
+}
+
+.service h4{
+    color:#202020;
+}
 </style>
 
 <body>
