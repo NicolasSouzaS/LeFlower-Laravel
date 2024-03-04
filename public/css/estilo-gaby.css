@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --theme-color: #f41e1e;
+    --theme-color: #fec195;
     --title-color: #1c1c1c;
     --body-color: #7b7e86;
     --smoke-color: #f3f3f3;
@@ -343,6 +343,7 @@ body {
     margin: 1rem;
     box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
     overflow: hidden;
+
 }
 
 .gallery-image {
@@ -352,6 +353,7 @@ body {
     height: 100%;
     object-fit: cover;
     transition: transform 400ms ease-out;
+    cursor: pointer;
 }
 .gallery-image:hover{
     background: #28a745;

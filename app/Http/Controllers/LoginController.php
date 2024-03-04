@@ -49,6 +49,7 @@ class LoginController extends Controller
             'emailUsuario' => $usuario->emailUsuario,
             'tipo_usuario' => 'cliente',
             'idUser' => $usuario->idUsuario,
+            'tipo' => $usuario->tipoUsuario_type,
         ]);
 
             if($tipoUsuario instanceof Cliente){
@@ -56,6 +57,7 @@ class LoginController extends Controller
                     'id' => $tipoUsuario->idCliente,
                     'nome' => $tipoUsuario->nomeCliente,
                     'tipoUsuario_type' => 'cliente',
+                    'nivelFuncionario' => null,
                 ]);
                 return redirect()->route('dashboard.cliente');
             }
@@ -64,15 +66,17 @@ class LoginController extends Controller
                 session([
                     'id' => $tipoUsuario->idFuncionario,
                     'nome' => $tipoUsuario->nomeFuncionario,
-                    'nivelFuncionario' => $tipoUsuario->nivelFuncionario,
+                    'nivelFuncionario' => 'Administrador',
+                    'tipoUsuario_type' => null,
                 ]);
                 return redirect()->route('dashboard.funcionarios.admin');
             }
-            elseif($tipoUsuario->nivelFuncionario == 'Estetica'){
+            elseif($tipoUsuario->nivelFuncionario == 'Esteticista'){
                 session([
                     'id' => $tipoUsuario->idFuncionario,
                     'nome' => $tipoUsuario->nomeFuncionario,
                     'nivelFuncionario' => $tipoUsuario->nivelFuncionario,
+                    'tipoUsuario_type' => null,
                 ]);
                 return redirect()->route('dashboard.funcionarios.estetica');
             }

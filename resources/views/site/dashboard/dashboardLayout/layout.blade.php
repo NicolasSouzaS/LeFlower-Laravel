@@ -48,6 +48,8 @@
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ asset('font-awesome-4.7.0/css/font-awesome.css') }}">
+    <link rel="stylesheet" href="{{ asset('font-awesome-4.7.0/css/font-awesome.min.css') }}">
 
 
 
@@ -55,12 +57,11 @@
 
     <style>
         body, html {
-            height: 1209px;
+            height: 1009px;
             margin: 0;
             color: white;
-            background:linear-gradient( 180deg, rgba(5, 19, 27, 0.4), rgba(5, 19, 27, 0.4) );
+            background:linear-gradient( 180deg, rgba(5, 19, 27, 0.9), rgba(5, 19, 27, 0.9) );
             object-fit: cover;
-
         }
 
         #video-background {
@@ -1022,7 +1023,7 @@ main {
     height: 100%;
     margin: 0;
     color: white;
-    background:gainsboro;
+    background:rgb(0, 0, 0);
     object-fit: cover;
 
  }
@@ -1032,6 +1033,9 @@ main {
  }
 }
 
+.user-info h4{
+        margin-left: 0px;
+    }
     </style>
 </head>
 
@@ -1042,200 +1046,135 @@ main {
 
 
 
-          @if(session('nivelFuncionario') == 'Administrador')
+          @if(session('tipoUsuario_type') == 'cliente')
           <nav class="main-menu">
-            <img src="{{ asset('assets/img/logo-white.png') }}" alt="">
+            <img style="width: 55%;" src="{{ asset('assets/logo4.png') }}" alt="">
             <ul>
-              <li style="padding-left: 7%;" class="nav-item active">
-                <b></b>
-                <b></b>
-                <a href="/sair">
-                  <i class="fa fa-house nav-icon"></i>
-                  <span class="nav-text">Home</span>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <b></b>
-                <b></b>
-                <a href="#">
-                  <i class="fa fa-user nav-icon"></i>
-                  <span class="nav-text">Alunos</span>
-                </a>
-              </li>
-
-
-              <li class="nav-item menu-item-has-children">
-                <a href="">
-                  <i class="fa fa-user nav-icon"></i>
-                  <span class="nav-text">Funcionarios</span>
-                        <ul style="background:transparent; margin-left:240px;margin-bottom:500px;" class="sub-menu">
-                        <li><a href="">Listar</a></li>
-                        <li><a href="">Cadastrar</a></li>
-                </ul>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <b></b>
-                <b></b>
-                <a href="#">
-                  <i class="fa fa-calendar-check nav-icon"></i>
-                  <span class="nav-text">Cronogramas de treino</span>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <b></b>
-                <b></b>
-                <a href="#">
-                  <i class="fa fa-person-running nav-icon"></i>
-                  <span class="nav-text">Treinos</span>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <b></b>
-                <b></b>
-                <a href="#">
-                  <i class="fa fa-plus nav-icon"></i>
-                  <span class="nav-text">Atividades</span>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <b></b>
-                <b></b>
-                <a href="#">
-                  <i class="fa fa-signal nav-icon"></i>
-                  <span class="nav-text">Serviços</span>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <b></b>
-                <b></b>
-                <a href="#">
-                  <i class="fa fa-paper-plane nav-icon"></i>
-                  <span class="nav-text">E-mail site</span>
-                </a>
-              </li>
-
-            </ul>
-          </nav>
-
-          @elseif (session('nivelFuncionario') == 'Esteticista')
-          <nav class="main-menu">
-            <img src="{{ asset('assets/img/logo-white.png') }}" alt="">
-            <ul>
-              <li style="padding-left: 7%;" class="nav-item active">
-                <b></b>
-                <b></b>
-                <a href="/">
-                  <i class="fa fa-house nav-icon"></i>
-                  <span class="nav-text">Home</span>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <b></b>
-                <b></b>
-                <a href="#">
-                  <i class="fa fa-user nav-icon"></i>
-                  <span class="nav-text">Aluno</span>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <b></b>
-                <b></b>
-                <a href="#">
-                  <i class="fa fa-calendar-check nav-icon"></i>
-                  <span class="nav-text">Cronogramas de treino</span>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <b></b>
-                <b></b>
-                <a href="#">
-                  <i class="fa fa-person-running nav-icon"></i>
-                  <span class="nav-text">Treinos</span>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <b></b>
-                <b></b>
-                <a href="#">
-                  <i class="fa fa-plus nav-icon"></i>
-                  <span class="nav-text">Atividades</span>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <b></b>
-                <b></b>
-                <a href="#">
-                  <i class="fa fa-signal nav-icon"></i>
-                  <span class="nav-text">Serviços</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-
-          @elseif(session('tipoUsuario_type') == 'cliente')
-          <nav class="main-menu">
-              <img src="{{ asset('assets/img/logo-white.png') }}" alt="">
-              <ul>
-                <li style="padding-left: 7%;" class="nav-item active">
+                <li class="nav-item">
                   <b></b>
                   <b></b>
-                  <a href="/">
-                    <i class="fa fa-house nav-icon"></i>
+                  <a style="padding-left:9%;" href="/cliente">
+                    <i class="fa fa-home nav-icon"></i>
                     <span class="nav-text">Home</span>
                   </a>
                 </li>
 
                 <li class="nav-item">
+                    <b></b>
+                    <b></b>
+                    <a href="#">
+                      <i class="fa fa-user nav-icon"></i>
+                      <span class="nav-text">Perfil</span>
+                    </a>
+                  </li>
+
+               <li class="nav-item">
                   <b></b>
                   <b></b>
-                  <a href="#">
-                    <i class="fa fa-user nav-icon"></i>
-                    <span class="nav-text">Perfil</span>
+                  <a href="/agendar">
+                    <i class="fa fa-pencil-square-o nav-icon"></i>
+                    <span class="nav-text">Agendar</span>
                   </a>
                 </li>
 
-                <li class="nav-item">
-                  <b></b>
-                  <b></b>
-                  <a href="#">
-                    <i class="fa fa-calendar-check nav-icon"></i>
-                    <span class="nav-text">Agendamentos</span>
-                  </a>
-                </li>
+              <li class="nav-item">
+                <b></b>
+                <b></b>
+                <a href="#">
+                  <i class="fa fa-shopping-cart nav-icon"></i>
+                  <span class="nav-text">Serviços</span>
+                </a>
+              </li>
 
-                <li class="nav-item">
-                  <b></b>
-                  <b></b>
-                  <a href="#">
-                    <i class="fa fa-person-running nav-icon"></i>
-                    <span class="nav-text">Treinos</span>
-                  </a>
-                </li>
+              <li class="nav-item">
+                <b></b>
+                <b></b>
+                <a href="#">
+                  <i class="fa fa-map-marker nav-icon"></i>
+                  <span class="nav-text">Unidade</span>
+                </a>
+              </li>
 
-                <li class="nav-item">
-                  <b></b>
-                  <b></b>
-                  <a href="#">
-                    <i class="fa fa-trophy nav-icon"></i>
-                    <span class="nav-text">Conquistas</span>
-                  </a>
-                </li>
-              </ul>
+              <li class="nav-item">
+                <b></b>
+                <b></b>
+                <a href="#">
+                  <i class="fa fa-whatsapp nav-icon"></i>
+                  <span class="nav-text">Contato</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <b></b>
+                <b></b>
+                <a href="/">
+                  <i class="fa fa-sign-in nav-icon"></i>
+                  <span class="nav-text">Sair</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          @elseif(session('nivelFuncionario') == 'Administrador')
+          <nav class="main-menu">
+            <img src="{{ asset('assets/img/logo-white.png') }}" alt="">
+            <ul>
+              <li style="padding-left: 7%;" class="nav-item active">
+                <b></b>
+                <b></b>
+                <a href="/admin">
+                  <i class="fa fa-house nav-icon"></i>
+                  <span class="nav-text">HomeAdmin</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <b></b>
+                <b></b>
+                <a href="#">
+                  <i class="fa fa-user nav-icon"></i>
+                  <span class="nav-text">AlunoClienteTeste</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <b></b>
+                <b></b>
+                <a href="#">
+                  <i class="fa fa-calendar-check nav-icon"></i>
+                  <span class="nav-text">Cronogramas de treino</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <b></b>
+                <b></b>
+                <a href="#">
+                  <i class="fa fa-person-running nav-icon"></i>
+                  <span class="nav-text">Treinos</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <b></b>
+                <b></b>
+                <a href="#">
+                  <i class="fa fa-plus nav-icon"></i>
+                  <span class="nav-text">Atividades</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <b></b>
+                <b></b>
+                <a href="#">
+                  <i class="fa fa-signal nav-icon"></i>
+                  <span class="nav-text">Serviços</span>
+                </a>
+              </li>
+            </ul>
             @endif
         </nav>
-
 
           <section style="padding-top: 1%;" class="content">
             <div class="left-content">
@@ -1482,5 +1421,7 @@ main {
     <!-- Main Js File -->
     <script src="{{ asset('js/main.js') }}"></script>
 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

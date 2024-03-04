@@ -49,7 +49,9 @@
     {{-- Meu css --}}
     {{-- LINK AOS CSS --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ 'path/to/font-awesome/css/font-awesome.min.css' }}">
+
+    <link rel="stylesheet" href="{{ asset('font-awesome-4.7.0/css/font-awesome.css') }}">
+    <link rel="stylesheet" href="{{ asset('font-awesome-4.7.0/css/font-awesome.min.css') }}">
 </head>
 
 <style>
@@ -786,20 +788,9 @@ a i{
                                     <li>
                                         <a href="/sobre">Sobre</a>
                                     </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="/servico/cabelos">Serviços</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="/servico/cabelos">Serviço</a></li>
-                                            <li><a href="service-details.html">Detalhes De Serviço</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#">Paginas</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="/equipe">Página De Equipe</a></li>
-                                            <li><a href="team-details.html">Detalhes Da Equipe</a></li>
-                                            <li><a href="/treino">Treino | Aulas</a></li>
-                                        </ul>
+                                    <li>
+
+                                        <a href="/servico/cabelos">Serviço</a>
                                     </li>
                                     <li>
                                         <a href="contact.html">Contato</a>
@@ -807,7 +798,7 @@ a i{
                                 </ul>
                             </nav>
                             <div class="navbar-right d-inline-flex d-lg-none">
-                                <button type="button" class="menu-toggle icon-btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                                <button type="button" class="menu-toggle icon-btn"> <i class="fa fa-home nav-icon"></i></button>
                             </div>
                         </div>
                         <div class="col-auto d-xxl-block d-none">
@@ -884,7 +875,7 @@ a i{
                                 <button type="button" class="btn style-r0 btn-border3 sideMenuToggler">
                                     <i class="far fa-bars"></i>
                                 </button>
-                                <label class="theme">
+                                <label style="display: none;" class="theme">
                                     <input id="darkModeToggle" class="input" type="checkbox">
                                     <svg width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="icon icon-sun"><circle r="5" cy="12" cx="12"></circle><line y2="3" y1="1" x2="12" x1="12"></line><line y2="23" y1="21" x2="12" x1="12"></line><line y2="5.64" y1="4.22" x2="5.64" x1="4.22"></line><line y2="19.78" y1="18.36" x2="19.78" x1="18.36"></line><line y2="12" y1="12" x2="3" x1="1"></line><line y2="12" y1="12" x2="23" x1="21"></line><line y2="18.36" y1="19.78" x2="5.64" x1="4.22"></line><line y2="4.22" y1="5.64" x2="19.78" x1="18.36"></line></svg>
                                     <svg viewBox="0 0 24 24" class="icon icon-moon"><path d="m12.3 4.9c.4-.2.6-.7.5-1.1s-.6-.8-1.1-.8c-4.9.1-8.7 4.1-8.7 9 0 5 4 9 9 9 3.8 0 7.1-2.4 8.4-5.9.2-.4 0-.9-.4-1.2s-.9-.2-1.2.1c-1 .9-2.3 1.4-3.7 1.4-3.1 0-5.7-2.5-5.7-5.7 0-1.9 1.1-3.8 2.9-4.8zm2.8 12.5c.5 0 1 0 1.4-.1-1.2 1.1-2.8 1.7-4.5 1.7-3.9 0-7-3.1-7-7 0-2.5 1.4-4.8 3.5-6-.7 1.1-1 2.4-1 3.8-.1 4.2 3.4 7.6 7.6 7.6z"></path></svg>

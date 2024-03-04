@@ -1,1 +1,1 @@
-<h1>Estetica</h1>
+@extends('site.dashboard.dashboardLayout.layout')

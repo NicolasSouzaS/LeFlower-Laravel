@@ -58,6 +58,7 @@ Route::post('/login', [LoginController::class, 'autenticar'])->name('login.auten
 // Dashboard cliente
 Route::middleware(['autenticacao:cliente'])->group(function(){
     Route::get('/cliente',[ClienteController::class,'index'])->name('dashboard.cliente');
+    Route::get('/agendar',[ClienteController::class,'agendar'])->name('dashboard.agendar');
 });
 Route::middleware(['autenticacao:Administrador'])->group(function(){
     Route::get('/admin',[AdminController::class,'index'])->name('dashboard.funcionarios.admin');
