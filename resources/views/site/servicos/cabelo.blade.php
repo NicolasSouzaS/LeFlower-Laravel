@@ -5,6 +5,38 @@
 @section('conteudo')
 
 <style>
+
+@media (max-width: 700px){
+    .hero2{
+        height: 650px;
+    }
+
+    .hero-slider{
+        height: 550px;
+        background: url({{ asset('assets/banner/bannerRespons.jpeg') }});
+        background-size: cover;
+    }
+
+    .videoLeFLower{
+        display: none;
+    }
+
+    .hero-slider video{
+        display: none;
+    }
+
+    .logoVideo{
+        display: contents;
+    }
+
+    .hero-style2{
+        display: none;
+    }
+
+    .btn-flower{
+      margin-top: 130%;
+    }
+}
     .service-section {
       display: flex;
       flex-wrap: wrap;
@@ -108,9 +140,9 @@
 
 
 
-   
 
-   
+
+
     .selecao{
         height: 600px;
         display: flex;
@@ -139,7 +171,7 @@
     color: #202020;
     transition: all 0.5s ease-in-out;
 
-    
+
  }
 
  @media (max-width: 700px) {

@@ -14678,13 +14678,6 @@ body {
     transition: 1.95s ease-in-out,1.95s ease-in-out,1.95s ease-in-out,1.15s ease-in-out;
 }
 
-body.dark-mode {
-    background-color: #19252E;
-    --smoke-color2: #1C1C1C;
-    --title-color: #1c1c1c;
-    transition: 1.95s ease-in-out,1.95s ease-in-out,1.95s ease-in-out,1.15s ease-in-out;
-}
-
 .hero-2 {
     clip-path: ellipse(105% 93% at 50%);
 }
@@ -14692,3 +14685,5 @@ body.dark-mode {
 .service h4{
     color: #202020;
 }
+
+

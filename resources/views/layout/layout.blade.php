@@ -51,8 +51,18 @@
 
     <link rel="stylesheet" href="{{ asset('font-awesome-4.7.0/css/font-awesome.css') }}">
     <link rel="stylesheet" href="{{ asset('font-awesome-4.7.0/css/font-awesome.min.css') }}">
-    
+
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/estilo.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('assets/cssCarrosel/fontawesome.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/cssCarrosel/templatemo-digimedia-v1.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/cssCarrosel/animated.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('assets/cssCarrosel/owl.css') }}">
+
+
 
 </head>
 
@@ -653,6 +663,7 @@ a i{
 
 
 
+
     <!--********************************
    		Code Start From Here
 	******************************** -->
@@ -1145,6 +1156,12 @@ a i{
         });
         </script>
 
+<script src="{{ asset('js/scriptcarrosel.js') }}"></script>
+
+<script src="{{ asset('assets/jsCarrosel/owl-carousel.js') }}"></script>
+<script src="{{ asset('assets/jsCarrosel/animation.js') }}"></script>
+<script src="{{ asset('assets/jsCarrosel/imagesloaded.js') }}"></script>
+<script src="{{ asset('assets/jsCarrosel/custom.js') }}"></script>
 
 
 </body>

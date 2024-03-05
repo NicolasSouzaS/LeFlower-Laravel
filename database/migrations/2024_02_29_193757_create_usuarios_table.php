@@ -18,14 +18,14 @@ return new class extends Migration
             $table->string('nomeUsuario');
             $table->string('senhaUsuario');
             $table->string('tipoUsuario');
-            $table->string('emailUsuario');
+            $table->string('emailUsuario')->unique(); // Adicionando a restrição UNIQUE
             $table->integer('tipoUsuario_id');
             $table->string('tipoUsuario_type');
             $table->timestamps();
         });
     }
 
-     /**
+    /**
      * Reverse the migrations.
      *
      * @return void

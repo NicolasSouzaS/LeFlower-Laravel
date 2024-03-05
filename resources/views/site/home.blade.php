@@ -157,7 +157,7 @@
 
 }
 
-@media (min-width: 701px) and (max-width:1024px){
+@media (min-width: 701px) and (max-width:1354px){
 
 .about-thumb-2 img{
     display: none;
@@ -217,61 +217,10 @@
     text-align: center;
 }
 
-@media (max-width: 700px) {
-      .about-thumb-2 img{
-        display: none;
-      }
+.servico .row{
+    margin: 0 auto;
+}
 
-      .about-thumb-num{
-        display: none;
-      }
-
-      .servico{
-        padding: 0% 0% 0% 0%;
-      }
-
-      .service p{
-        font-size: 8pt
-      }
-
-      .service{
-        width: 100%;
-      }
-
-      .card-menu2{
-        margin-left:0%;
-      }
-
-     .buttonAgendar1{
-        margin-right:0%;
-     }
-
-     .buttonAgendar2{
-        margin-left:0%;
-    }
-
-    .buttonAgendar3{
-        margin-right:0%;
-    }
-
-    .card-header h3{
-        font-size: 20pt;
-        text-align: center;
-    }
-    .selecao {
-    height: 230px;
-    display: block;
-    margin-bottom: 250px;
-    }
-
-    .list-group a{
-      margin-bottom:2%;
-    }
-    .list-group{
-      align-items:center;
-    }
-
-    }
 
 
 
@@ -292,6 +241,100 @@
 </style>
 
 
+<div class="container-fluid wow fadeIn animated" data-wow-duration="1s" data-wow-delay="0.7s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.7s; -moz-animation-delay: 0.7s; animation-delay: 0.7s;">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="loop owl-carousel owl-loaded owl-drag">
+
+
+
+
+
+            <div class="owl-stage-outer">
+                <div class="owl-stage" style="transition: all 0.25s ease 0s; width: 5620px; transform: translate3d(-1123px, 0px, 0px);">
+                    <div class="owl-item cloned" style="width: 374.6px;">
+                        <div class="item">
+                            <a href="#">
+                                <div class="portfolio-item">
+                                    <div class="thumb">
+                                        <img src="{{ asset('assets/barbeiro.png') }}" alt="">
+                                    </div>
+                                    <div class="down-content">
+                                        <h4>Barbeiro Profissional</h4>
+                                        <span>Lucas Oliveira</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 374.6px;">
+                        <div class="item">
+                            <a href="#">
+                                <div class="portfolio-item">
+                                    <div class="thumb">
+                                        <img src="{{ asset('assets/cabelo.png') }}" alt="">
+                                    </div>
+                                    <div class="down-content">
+                                        <h4>Cabeleireiro Profissional</h4>
+                                        <span>Andréa Santos</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 374.6px;">
+                        <div class="item">
+                            <a href="#">
+                                <div class="portfolio-item">
+                                    <div class="thumb">
+                                        <img src="{{ asset('assets/depilacao.png') }}" alt="">
+                                    </div>
+                                    <div class="down-content">
+                                        <h4>Depiladora Profissional</h4>
+                                        <span>Fernanda Silva</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="owl-item cloned active" style="width: 374.6px;">
+                        <div class="item">
+                            <a href="#">
+                                <div class="portfolio-item">
+                                    <div class="thumb">
+                                        <img src="{{ asset('assets/desing.png') }}" alt="">
+                                    </div>
+                                    <div class="down-content">
+                                        <h4>Especialista em Design de Sobrancelhas</h4>
+                                        <span>Rodrigo Almeida</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="owl-item cloned active" style="width: 374.6px;">
+                        <div class="item">
+                            <a href="#">
+                                <div class="portfolio-item">
+                                    <div class="thumb">
+                                        <img src="{{ asset('assets/estetica.png') }}" alt="">
+                                    </div>
+                                    <div class="down-content">
+                                        <h4>Esteticista Facial Profissional</h4>
+                                        <span>Juliana Costa</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
+      </div>
+    </div>
+  </div>
+
+
 
  <!--==============================
     About Area
@@ -304,7 +347,7 @@
             <div class="row gy-5 justify-content-center">
                 <div class="col-md-6  order-xl-2 container1">
                     <div class="about-thumb-2">
-                        <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Cabelo.jpeg') }}" alt="img">
+                        <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/fotos-compri/cabelo1.jpeg') }}" alt="img">
                         <div class="about-thumb-num">
                             Cabelos
                         </div>
@@ -428,7 +471,7 @@
             <div class="row gy-5 justify-content-center">
                 <div class="col-md-6 container2">
                     <div class="about-thumb-2">
-                        <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Unhas.jpeg') }}" alt="img">
+                        <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/fotos-compri/unhas1.jpeg') }}" alt="img">
                         <div class="about-thumb-num">
                             Unhas
                         </div>
@@ -551,7 +594,7 @@
             <div class="row gy-5 justify-content-center">
                 <div class="col-md-6  order-xl-2 container3">
                     <div class="about-thumb-2">
-                        <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Maquiagem3.jpeg') }}" alt="img">
+                        <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/fotos-compri/make1.jpeg') }}" alt="img">
                         <div class="about-thumb-num">
                             Maquiagem
                         </div>

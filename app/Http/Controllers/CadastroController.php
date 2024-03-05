@@ -20,10 +20,10 @@ class CadastroController extends Controller
 
     public function cadastroCliente(Request $request){
         $request->validate([
-            'nomeUsuario'       => 'nullable|string|max:100',
-            'senhaUsuario'      => 'nullable|string|max:255',
-            'emailUsuario'      => 'nullable|email|max:200',
-            'telefoneUsuario'   => 'nullable|string|max:16',
+            'nomeUsuarioRegistro'   => 'nullable|string|max:100',
+            'senhaUsuarioRegistro'  => 'nullable|string|max:255',
+            'emailUsuarioRegistro'  => 'nullable|email|max:200|unique:tblusuarios,emailUsuario',
+            'telefoneUsuarioRegistro' => 'nullable|string|max:16',
         ]);
 
         // $ultimoUsuario = Usuario::latest('idUsuario')->first();
@@ -35,15 +35,15 @@ class CadastroController extends Controller
         $usuario = new Usuario();
         $cliente = new Cliente();
 
-        $usuario->nomeUsuario = $request->input('nomeUsuario');
-        $cliente->nomeCliente = $request->input('nomeUsuario');
+        $usuario->nomeUsuario = $request->input('nomeUsuarioRegistro');
+        $cliente->nomeCliente = $request->input('nomeUsuarioRegistro');
 
-        $usuario->senhaUsuario = $request->input('senhaUsuario');
-        $cliente->senhaCliente = $request->input('senhaUsuario');
+        $usuario->senhaUsuario = $request->input('senhaUsuarioRegistro');
+        $cliente->senhaCliente = $request->input('senhaUsuarioRegistro');
 
-        $usuario->emailUsuario = $request->input('emailUsuario');
-        $cliente->emailCliente = $request->input('emailUsuario');
-        $cliente->telefoneCliente = $request->input('telefoneUsuario');
+        $usuario->emailUsuario = $request->input('emailUsuarioRegistro');
+        $cliente->emailCliente = $request->input('emailUsuarioRegistro');
+        $cliente->telefoneCliente = $request->input('telefoneUsuarioRegistro');
 
         $cliente->save();
 

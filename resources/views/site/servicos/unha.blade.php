@@ -5,6 +5,37 @@
 @section('conteudo')
 
 <style>
+    @media (max-width: 700px){
+    .hero2{
+        height: 650px;
+    }
+
+    .hero-slider{
+        height: 550px;
+        background: url({{ asset('assets/banner/bannerRespons.jpeg') }});
+        background-size: cover;
+    }
+
+    .videoLeFLower{
+        display: none;
+    }
+
+    .hero-slider video{
+        display: none;
+    }
+
+    .logoVideo{
+        display: contents;
+    }
+
+    .hero-style2{
+        display: none;
+    }
+
+    .btn-flower{
+      margin-top: 130%;
+    }
+}
     .service-section {
       display: flex;
       flex-wrap: wrap;
@@ -332,7 +363,7 @@
         ==============================-->
         <div class="" data-bg-src="assets/img/bg/about3-bg.png">
             <div class="text-center">
-                <span class="sub-title" style="font-size: 13pt">Cabelo</span>
+                <span class="sub-title" style="font-size: 13pt">Unhas</span>
             </div>
             <div class="container-fluid servico" style="display: flex;">
                 <div class="row gy-5 justify-content-center">
@@ -340,7 +371,7 @@
                         <div class="about-thumb-2">
                             <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Cabelo.jpeg') }}" alt="img">
                             <div class="about-thumb-num">
-                                Cabelos
+                                Unhas
                             </div>
                         </div>
                     </div>
@@ -348,43 +379,43 @@
                     <div class="col-md-6  order-xl-1">
                         <div class="card-menu">
                             <div class="card-header bg-transparent border-0">
-                                <h3 class="sec-title" style="color: #202020;">Menu de Serviços de Cabelo</h3>
+                                <h3 class="sec-title" style="color: #202020;">Menu de Serviços de Unha</h3>
                             </div>
 
                             <div class="card-body">
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Luzes para Cabelo</h4>
-                                        <h4 style="color: #202020;">R$ 349,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Manicure Básica</h4>
+                                        <h4 style="color: #202020;">R$ 49,99</h4>
                                     </div>
-                                    <p class="service-description">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
+                                    <p class="service-description"> Inclui corte e limagem das unhas, remoção de cutículas, aplicação de base e esmalte nas mãos.</p>
                                     <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Prancha</h4>
-                                        <h4>R$ 59,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Pedicure Básica</h4>
+                                        <h4>R$ 39,99</h4>
                                     </div>
-                                    <p class="service-description">Alise seus cabelos para um visual elegante e polido.</p>
+                                    <p class="service-description">Similar à manicure básica, mas para os pés. Inclui corte e limagem das unhas, remoção de cutículas, e aplicação de base e esmalte.</p>
                                     <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Penteados</h4>
-                                        <h4>R$ 199,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Manicure e Pedicure Combo</h4>
+                                        <h4>R$ 69,99</h4>
                                     </div>
-                                    <p class="service-description">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
+                                    <p class="service-description">Um pacote que inclui manicure básica e pedicure básica em uma única sessão.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Progressiva</h4>
-                                        <h4>R$ 269,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Manicure Francesa</h4>
+                                        <h4>R$ 69,99</h4>
                                     </div>
-                                    <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>
+                                    <p class="service-description">Uma técnica de manicure que cria uma aparência elegante e clássica com a aplicação de esmalte branco na ponta das unhas e uma cor neutra na base.</p>
                                   <p>..........................................................................................................................</p>
                                   <button style="font-weight: bold; margin-top:5%;" class="button buttonAgendar1">
                                     Agendar
@@ -460,7 +491,7 @@
                         <div class="about-thumb-2">
                             <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Escova.jpeg') }}" alt="img">
                             <div class="about-thumb-num">
-                                Progressivas
+                                Tratamentos Especiais
                             </div>
                         </div>
                     </div>
@@ -468,43 +499,43 @@
                     <div class="col-md-6 ">
                         <div style="" class="card-menu2">
                             <div class="card-header bg-transparent border-0">
-                                <h3 class="sec-title" style="color: #202020;">Escovas Progressivas</h3>
+                                <h3 class="sec-title" style="color: #202020;">Tratamentos Especiais para Unhas</h3>
                             </div>
 
                             <div class="card-body">
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Escova marroquina</h4>
-                                        <h4>R$ 349,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Spa de Mãos e Pés</h4>
+                                        <h4>R$ 99,99</h4>
                                     </div>
-                                    <p class="service-description" style="color: #202020;">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
+                                    <p class="service-description" style="color: #202020;">Um tratamento de luxo que inclui esfoliação, hidratação e massagem nas mãos e pés, além dos serviços de manicure e pedicure.</p>
                                    <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Escova americana</h4>
-                                        <h4 style="color: #202020;">R$ 59,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Alongamento de Unhas com Tips</h4>
+                                        <h4 style="color: #202020;">R$ 119,99</h4>
                                     </div>
-                                    <p class="service-description" style="color: #202020;">Alise seus cabelos para um visual elegante e polido.</p>
+                                    <p class="service-description" style="color: #202020;">Um serviço que utiliza tips (pontas) de unhas artificiais aplicadas sobre as unhas naturais para aumentar o comprimento e proporcionar uma aparência alongada.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Escova indiana</h4>
-                                        <h4 style="color: #202020;">R$ 199,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Manicure e Pedicure com Parafina</h4>
+                                        <h4 style="color: #202020;">R$ 79,99</h4>
                                     </div>
-                                    <p class="service-description" style="color: #202020;">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
+                                    <p class="service-description" style="color: #202020;">Além dos serviços básicos de manicure e pedicure, este pacote inclui um tratamento com parafina para hidratar e suavizar a pele das mãos e pés.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Escova inteligente</h4>
-                                        <h4 style="color: #202020;">R$ 269,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Esmaltação em Gel</h4>
+                                        <h4 style="color: #202020;">R$ 109,99</h4>
                                     </div>
-                                    <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>
+                                    <p class="service-description">Uma técnica de esmaltação duradoura que utiliza esmalte em gel, curado sob luz UV ou LED, proporcionando uma aparência brilhante e resistente a lascas por semanas.</p>
                                   <p>..........................................................................................................................</p>
                                   <button style="font-weight: bold;  margin-top:5%;" class="button buttonAgendar2">
                                     Agendar
@@ -579,7 +610,7 @@
                         <div class="about-thumb-2">
                             <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Luzes.jpeg') }}" alt="img">
                             <div class="about-thumb-num">
-                                Cabelos Loiros
+                                Personalização e Estilo
                             </div>
                         </div>
                     </div>
@@ -587,43 +618,43 @@
                     <div class="col-md-6  order-xl-1">
                         <div class="card-menu">
                             <div class="card-header bg-transparent border-0">
-                                <h3 style="" class="sec-title">Luzes</h3>
+                                <h3 style="" class="sec-title">Personalização e Estilo</h3>
                             </div>
 
                             <div class="card-body">
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title">Luzes</h4>
-                                        <h4>R$ 349,99</h4>
+                                        <h4 class="service-title">Nail Art Personalizada</h4>
+                                        <h4>R$ 79,99</h4>
                                     </div>
-                                    <p class="service-description">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
+                                    <p class="service-description">Serviço de decoração de unhas com desenhos, pedrarias, adesivos e outras técnicas criativas para um visual personalizado e único.</p>
                                    <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title">Mechas</h4>
+                                        <h4 class="service-title">Francesinha Reversa</h4>
                                         <h4>R$ 59,99</h4>
                                     </div>
-                                    <p class="service-description">Alise seus cabelos para um visual elegante e polido.</p>
+                                    <p class="service-description">Uma variação moderna da manicure francesa, onde a cor é aplicada na ponta das unhas com a base na ponta das unhas com uma cor mais viva ou brilhante.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title">Californianas</h4>
-                                        <h4>R$ 199,99</h4>
+                                        <h4 class="service-title">Stiletto Nails</h4>
+                                        <h4>R$ 109,99</h4>
                                     </div>
-                                    <p class="service-description">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
+                                    <p class="service-description">Um estilo de unhas longas e pontiagudas, que proporcionam um visual elegante e dramático. Ideal para quem gosta de um estilo mais ousado.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title">Ombré hair</h4>
-                                        <h4>R$ 269,99</h4>
+                                        <h4 class="service-title">Unhas Ombré</h4>
+                                        <h4>R$ 89,99</h4>
                                     </div>
-                                    <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>
+                                    <p class="service-description">Uma técnica de esmaltação que cria um degradê de cores nas unhas, proporcionando um visual suave e elegante.</p>
                                   <p>..........................................................................................................................</p>
                                   <button style="font-weight: bold;  margin-top:5%;" class="button buttonAgendar3">
                                     Agendar

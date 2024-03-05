@@ -5,6 +5,39 @@
 @section('conteudo')
 
 <style>
+
+@media (max-width: 700px){
+    .hero2{
+        height: 650px;
+    }
+
+    .hero-slider{
+        height: 550px;
+        background: url({{ asset('assets/banner/bannerRespons.jpeg') }});
+
+        background-size: cover;
+    }
+
+    .videoLeFLower{
+        display: none;
+    }
+
+    .hero-slider video{
+        display: none;
+    }
+
+    .logoVideo{
+        display: contents;
+    }
+
+    .hero-style2{
+        display: none;
+    }
+
+    .btn-flower{
+      margin-top: 130%;
+    }
+}
     .service-section {
       display: flex;
       flex-wrap: wrap;
@@ -332,7 +365,7 @@
         ==============================-->
         <div class="" data-bg-src="assets/img/bg/about3-bg.png">
             <div class="text-center">
-                <span class="sub-title" style="font-size: 13pt">Cabelo</span>
+                <span class="sub-title" style="font-size: 13pt">Depilações</span>
             </div>
             <div class="container-fluid servico" style="display: flex;">
                 <div class="row gy-5 justify-content-center">
@@ -340,7 +373,7 @@
                         <div class="about-thumb-2">
                             <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Cabelo.jpeg') }}" alt="img">
                             <div class="about-thumb-num">
-                                Cabelos
+                                Depilações
                             </div>
                         </div>
                     </div>
@@ -348,43 +381,43 @@
                     <div class="col-md-6  order-xl-1">
                         <div class="card-menu">
                             <div class="card-header bg-transparent border-0">
-                                <h3 class="sec-title" style="color: #202020;">Menu de Serviços de Cabelo</h3>
+                                <h3 class="sec-title" style="color: #202020;">Menu de Serviços de Depilações</h3>
                             </div>
 
                             <div class="card-body">
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Luzes para Cabelo</h4>
-                                        <h4 style="color: #202020;">R$ 349,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Depilação com cera quente</h4>
+                                        <h4 style="color: #202020;">R$ 140,99</h4>
                                     </div>
-                                    <p class="service-description">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
+                                    <p class="service-description">A aplicação de cera quente é uma técnica popular para a remoção de pelos. Pode ser usada em várias áreas do corpo, incluindo pernas, braços, axilas e virilha.</p>
                                     <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Prancha</h4>
-                                        <h4>R$ 59,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Depilação com cera fria</h4>
+                                        <h4>R$ 129,99</h4>
                                     </div>
-                                    <p class="service-description">Alise seus cabelos para um visual elegante e polido.</p>
+                                    <p class="service-description">Similar à depilação com cera quente, mas a cera é aplicada fria. É uma opção menos desconfortável para algumas pessoas.</p>
                                     <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Penteados</h4>
-                                        <h4>R$ 199,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Depilação com cera de açúcar</h4>
+                                        <h4>R$ 159,99</h4>
                                     </div>
-                                    <p class="service-description">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
+                                    <p class="service-description">Uma alternativa natural à cera tradicional, feita de açúcar, água e suco de limão. É suave para a pele e pode ser menos dolorosa.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Progressiva</h4>
-                                        <h4>R$ 269,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Depilação com laser</h4>
+                                        <h4>R$ 339,99</h4>
                                     </div>
-                                    <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>
+                                    <p class="service-description">Este método usa luz pulsada para destruir o folículo piloso, impedindo o crescimento futuro de pelos. É eficaz, mas geralmente requer várias sessões para resultados duradouros.</p>
                                   <p>..........................................................................................................................</p>
                                   <button style="font-weight: bold; margin-top:5%;" class="button buttonAgendar1">
                                     Agendar
@@ -460,7 +493,7 @@
                         <div class="about-thumb-2">
                             <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Escova.jpeg') }}" alt="img">
                             <div class="about-thumb-num">
-                                Progressivas
+                                Depilações relaxantes
                             </div>
                         </div>
                     </div>
@@ -468,14 +501,14 @@
                     <div class="col-md-6 ">
                         <div style="" class="card-menu2">
                             <div class="card-header bg-transparent border-0">
-                                <h3 class="sec-title" style="color: #202020;">Escovas Progressivas</h3>
+                                <h3 class="sec-title" style="color: #202020;">Depilações relaxantes</h3>
                             </div>
 
                             <div class="card-body">
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Escova marroquina</h4>
-                                        <h4>R$ 349,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Depilação com luz pulsada intensa</h4>
+                                        <h4>R$ 399,99</h4>
                                     </div>
                                     <p class="service-description" style="color: #202020;">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
                                    <p class="pontos">...........................................................................................................................</p>
@@ -483,8 +516,8 @@
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Escova americana</h4>
-                                        <h4 style="color: #202020;">R$ 59,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Depilação com eletrólise</h4>
+                                        <h4 style="color: #202020;">R$ 159,99</h4>
                                     </div>
                                     <p class="service-description" style="color: #202020;">Alise seus cabelos para um visual elegante e polido.</p>
                                  <p class="pontos">...........................................................................................................................</p>
@@ -492,8 +525,8 @@
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Escova indiana</h4>
-                                        <h4 style="color: #202020;">R$ 199,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Depilação com lâmina</h4>
+                                        <h4 style="color: #202020;">R$ 79,99</h4>
                                     </div>
                                     <p class="service-description" style="color: #202020;">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
                                  <p class="pontos">...........................................................................................................................</p>
@@ -579,7 +612,7 @@
                         <div class="about-thumb-2">
                             <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Luzes.jpeg') }}" alt="img">
                             <div class="about-thumb-num">
-                                Cabelos Loiros
+                                Depilações técnicas
                             </div>
                         </div>
                     </div>
@@ -587,13 +620,13 @@
                     <div class="col-md-6  order-xl-1">
                         <div class="card-menu">
                             <div class="card-header bg-transparent border-0">
-                                <h3 style="" class="sec-title">Luzes</h3>
+                                <h3 style="" class="sec-title">Depilações técnicas</h3>
                             </div>
 
                             <div class="card-body">
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title">Luzes</h4>
+                                        <h4 class="service-title">Depilação com creme depilatório</h4>
                                         <h4>R$ 349,99</h4>
                                     </div>
                                     <p class="service-description">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
@@ -602,7 +635,7 @@
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title">Mechas</h4>
+                                        <h4 class="service-title">Depilação Máquina Elétrica</h4>
                                         <h4>R$ 59,99</h4>
                                     </div>
                                     <p class="service-description">Alise seus cabelos para um visual elegante e polido.</p>
@@ -611,19 +644,19 @@
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title">Californianas</h4>
+                                        <h4 class="service-title">Depilação com roll-on de cera</h4>
                                         <h4>R$ 199,99</h4>
                                     </div>
-                                    <p class="service-description">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
+                                    <p class="service-description">Este método utiliza um aplicador em forma de roll-on para aplicar a cera de forma mais uniforme sobre a pele, facilitando o processo de depilação.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title">Ombré hair</h4>
+                                        <h4 class="service-title">Depilação com cera de chocolate</h4>
                                         <h4>R$ 269,99</h4>
                                     </div>
-                                    <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>
+                                    <p class="service-description">Alguns salões oferecem serviços de depilação com ceras especiais, como cera de chocolate, que contém ingredientes nutritivos e hidratantes para a pele.</p>
                                   <p>..........................................................................................................................</p>
                                   <button style="font-weight: bold;  margin-top:5%;" class="button buttonAgendar3">
                                     Agendar

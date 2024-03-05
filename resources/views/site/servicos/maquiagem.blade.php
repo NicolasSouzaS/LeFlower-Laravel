@@ -5,6 +5,39 @@
 @section('conteudo')
 
 <style>
+
+@media (max-width: 700px){
+    .hero2{
+        height: 650px;
+    }
+
+    .hero-slider{
+        height: 550px;
+        background: url({{ asset('assets/banner/bannerRespons.jpeg') }});
+
+        background-size: cover;
+    }
+
+    .videoLeFLower{
+        display: none;
+    }
+
+    .hero-slider video{
+        display: none;
+    }
+
+    .logoVideo{
+        display: contents;
+    }
+
+    .hero-style2{
+        display: none;
+    }
+
+    .btn-flower{
+      margin-top: 130%;
+    }
+}
     .service-section {
       display: flex;
       flex-wrap: wrap;
@@ -332,7 +365,7 @@
         ==============================-->
         <div class="" data-bg-src="assets/img/bg/about3-bg.png">
             <div class="text-center">
-                <span class="sub-title" style="font-size: 13pt">Cabelo</span>
+                <span class="sub-title" style="font-size: 13pt">Maquiagem</span>
             </div>
             <div class="container-fluid servico" style="display: flex;">
                 <div class="row gy-5 justify-content-center">
@@ -340,7 +373,7 @@
                         <div class="about-thumb-2">
                             <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Cabelo.jpeg') }}" alt="img">
                             <div class="about-thumb-num">
-                                Cabelos
+                                Maquiagem
                             </div>
                         </div>
                     </div>
@@ -348,43 +381,43 @@
                     <div class="col-md-6  order-xl-1">
                         <div class="card-menu">
                             <div class="card-header bg-transparent border-0">
-                                <h3 class="sec-title" style="color: #202020;">Menu de Serviços de Cabelo</h3>
+                                <h3 class="sec-title" style="color: #202020;">Menu de Serviços de Maquiagem</h3>
                             </div>
 
                             <div class="card-body">
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Luzes para Cabelo</h4>
-                                        <h4 style="color: #202020;">R$ 349,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Maquiagem para eventos sociais</h4>
+                                        <h4 style="color: #202020;">R$ 149,99</h4>
                                     </div>
-                                    <p class="service-description">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
+                                    <p class="service-description">Uma maquiagem mais leve e natural, adequada para eventos sociais como festas, jantares ou encontros casuais.</p>
                                     <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Prancha</h4>
+                                        <h4 class="service-title" style="color: #202020;">Maquiagem para noivas</h4>
                                         <h4>R$ 59,99</h4>
                                     </div>
-                                    <p class="service-description">Alise seus cabelos para um visual elegante e polido.</p>
+                                    <p class="service-description">Maquiagem criativa, muitas vezes usada em eventos temáticos, festas à fantasia, ou para fotos e produções artísticas.</p>
                                     <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Penteados</h4>
-                                        <h4>R$ 199,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Maquiagem para ensaios fotográficos</h4>
+                                        <h4>R$ 249,99</h4>
                                     </div>
-                                    <p class="service-description">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
+                                    <p class="service-description">Uma maquiagem projetada para destacar os recursos faciais sob as luzes da câmera, garantindo que o rosto pareça natural e bem definido nas fotos.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Progressiva</h4>
-                                        <h4>R$ 269,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Maquiagem para editoriais de moda</h4>
+                                        <h4>R$ 329,99</h4>
                                     </div>
-                                    <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>
+                                    <p class="service-description">Maquiagem sofisticada e de alto impacto, projetada para complementar as tendências de moda e destacar os looks dos modelos em editoriais de revistas ou campanhas publicitárias.</p>
                                   <p>..........................................................................................................................</p>
                                   <button style="font-weight: bold; margin-top:5%;" class="button buttonAgendar1">
                                     Agendar
@@ -460,7 +493,7 @@
                         <div class="about-thumb-2">
                             <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Escova.jpeg') }}" alt="img">
                             <div class="about-thumb-num">
-                                Progressivas
+                               Maquiagem para festas
                             </div>
                         </div>
                     </div>
@@ -468,43 +501,43 @@
                     <div class="col-md-6 ">
                         <div style="" class="card-menu2">
                             <div class="card-header bg-transparent border-0">
-                                <h3 class="sec-title" style="color: #202020;">Escovas Progressivas</h3>
+                                <h3 class="sec-title" style="color: #202020;">Maquiagem para festas</h3>
                             </div>
 
                             <div class="card-body">
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Escova marroquina</h4>
-                                        <h4>R$ 349,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Maquiagem para festas à fantasia ou eventos</h4>
+                                        <h4>R$ 149,99</h4>
                                     </div>
-                                    <p class="service-description" style="color: #202020;">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
+                                    <p class="service-description" style="color: #202020;">Maquiagem elaborada para combinar com fantasias ou temas específicos de festas, como Halloween, Carnaval, ou festas temáticas.</p>
                                    <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Escova americana</h4>
-                                        <h4 style="color: #202020;">R$ 59,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Maquiagem para formaturas ou bailes de gala</h4>
+                                        <h4 style="color: #202020;">R$ 259,99</h4>
                                     </div>
-                                    <p class="service-description" style="color: #202020;">Alise seus cabelos para um visual elegante e polido.</p>
+                                    <p class="service-description" style="color: #202020;">Maquiagem glamorosa e sofisticada, muitas vezes complementada por técnicas de contorno e realce para criar um visual deslumbrante adequado para eventos formais.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Escova indiana</h4>
-                                        <h4 style="color: #202020;">R$ 199,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Maquiagem para editorial de beleza</h4>
+                                        <h4 style="color: #202020;">R$ 249,99</h4>
                                     </div>
-                                    <p class="service-description" style="color: #202020;">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
+                                    <p class="service-description" style="color: #202020;">Maquiagem focada em realçar a beleza natural do rosto, com ênfase na pele impecável, olhos expressivos e lábios perfeitos, muitas vezes usada em editoriais de revistas de beleza.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Escova inteligente</h4>
-                                        <h4 style="color: #202020;">R$ 269,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Maquiagem para sessões de fotos de gestantes ou newborn</h4>
+                                        <h4 style="color: #202020;">R$ 99,99</h4>
                                     </div>
-                                    <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>
+                                    <p class="service-description">Maquiagem suave e natural projetada para realçar a beleza das mães grávidas ou recém-nascidos em sessões fotográficas.</p>
                                   <p>..........................................................................................................................</p>
                                   <button style="font-weight: bold;  margin-top:5%;" class="button buttonAgendar2">
                                     Agendar
@@ -579,7 +612,7 @@
                         <div class="about-thumb-2">
                             <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Luzes.jpeg') }}" alt="img">
                             <div class="about-thumb-num">
-                                Cabelos Loiros
+                                Maquiagem para ensaios
                             </div>
                         </div>
                     </div>
@@ -587,43 +620,43 @@
                     <div class="col-md-6  order-xl-1">
                         <div class="card-menu">
                             <div class="card-header bg-transparent border-0">
-                                <h3 style="" class="sec-title">Luzes</h3>
+                                <h3 style="" class="sec-title">Maquiagem para ensaios</h3>
                             </div>
 
                             <div class="card-body">
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title">Luzes</h4>
-                                        <h4>R$ 349,99</h4>
+                                        <h4 class="service-title">Maquiagem para ensaios de modelos</h4>
+                                        <h4>R$ 249,99</h4>
                                     </div>
-                                    <p class="service-description">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
+                                    <p class="service-description"> Maquiagem versátil e adaptável, projetada para complementar uma variedade de looks e estilos de moda durante sessões de fotos com modelos.</p>
                                    <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title">Mechas</h4>
-                                        <h4>R$ 59,99</h4>
+                                        <h4 class="service-title">Maquiagem para produções audiovisuais. TV, cinema e teatro</h4>
+                                        <h4>R$ 209,99</h4>
                                     </div>
-                                    <p class="service-description">Alise seus cabelos para um visual elegante e polido.</p>
+                                    <p class="service-description">Maquiagem especializada para atender às demandas específicas de produções audiovisuais, garantindo que os atores estejam bem caracterizados e adequados para as câmeras.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title">Californianas</h4>
-                                        <h4>R$ 199,99</h4>
+                                        <h4 class="service-title">Maquiagem para noite</h4>
+                                        <h4>R$ 149,99</h4>
                                     </div>
-                                    <p class="service-description">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
+                                    <p class="service-description">Maquiagem mais dramática e marcante, projetada para a noite, com ênfase em olhos esfumados, lábios vibrantes e contorno aprimorado para um visual impactante.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title">Ombré hair</h4>
-                                        <h4>R$ 269,99</h4>
+                                        <h4 class="service-title">Maquiagem para a terceira idade</h4>
+                                        <h4>R$ 119,99</h4>
                                     </div>
-                                    <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>
+                                    <p class="service-description">Maquiagem adaptada para atender às necessidades da pele madura, focando em técnicas que realçam os traços naturais e minimizam os sinais de envelhecimento.</p>
                                   <p>..........................................................................................................................</p>
                                   <button style="font-weight: bold;  margin-top:5%;" class="button buttonAgendar3">
                                     Agendar

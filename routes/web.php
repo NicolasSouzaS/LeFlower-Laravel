@@ -29,7 +29,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/servico', [ServicoController::class, 'index'])->name('servico');
-Route::get('/cadastrar-se', [CadastroController::class, 'index'])->name('cadastroCliente');
+Route::get('/cadastrar-se', [CadastroController::class, 'index'])->name('cadastroClien');
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::get('/dashboard/admin', [AdminController::class, 'index'])->name('dashboard.admin');
 
@@ -47,11 +47,9 @@ Route::get('/servico/sobrancelhas', [ServicoController::class, 'servicoSobrancel
 
 
 
-// Rota de cadastro de usuário
-Route::post('/login', [CadastroController::class, 'cadastroCliente'])->name('cadastro.store');
 
-// Rota de login de usuario
-Route::post('/login', [LoginController::class, 'autenticar'])->name('login.autenticar');
+
+
 
 
 
@@ -77,3 +75,13 @@ Route::middleware(['autenticacao:Administrador'])->group(function(){
 });Route::middleware(['autenticacao:Esteticista'])->group(function(){
     Route::get('/esteticista',[EsteticaController::class,'index'])->name('dashboard.funcionarios.estetica');
 });
+
+
+
+
+
+// Rota de login de usuario
+Route::post('/login', [LoginController::class, 'autenticar'])->name('login.autenticar');
+
+// Rota de cadastro de usuário
+Route::post('/', [CadastroController::class, 'cadastroCliente'])->name('cadastro.store');

@@ -5,6 +5,39 @@
 @section('conteudo')
 
 <style>
+
+@media (max-width: 700px){
+    .hero2{
+        height: 650px;
+    }
+
+    .hero-slider{
+        height: 550px;
+        background: url({{ asset('assets/banner/bannerRespons.jpeg') }});
+
+        background-size: cover;
+    }
+
+    .videoLeFLower{
+        display: none;
+    }
+
+    .hero-slider video{
+        display: none;
+    }
+
+    .logoVideo{
+        display: contents;
+    }
+
+    .hero-style2{
+        display: none;
+    }
+
+    .btn-flower{
+      margin-top: 130%;
+    }
+}
     .service-section {
       display: flex;
       flex-wrap: wrap;
@@ -333,7 +366,7 @@
         ==============================-->
         <div class="" data-bg-src="assets/img/bg/about3-bg.png">
             <div class="text-center">
-                <span class="sub-title" style="font-size: 13pt">Cabelo</span>
+                <span class="sub-title" style="font-size: 13pt">Massagens</span>
             </div>
             <div class="container-fluid servico" style="display: flex;">
                 <div class="row gy-5 justify-content-center">
@@ -341,7 +374,7 @@
                         <div class="about-thumb-2">
                             <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Cabelo.jpeg') }}" alt="img">
                             <div class="about-thumb-num">
-                                Cabelos
+                                Massagem
                             </div>
                         </div>
                     </div>
@@ -349,43 +382,43 @@
                     <div class="col-md-6  order-xl-1">
                         <div class="card-menu">
                             <div class="card-header bg-transparent border-0">
-                                <h3 class="sec-title" style="color: #202020;">Menu de Serviços de Cabelo</h3>
+                                <h3 class="sec-title" style="color: #202020;">Menu de Serviços de Massagem</h3>
                             </div>
 
                             <div class="card-body">
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Luzes para Cabelo</h4>
-                                        <h4 style="color: #202020;">R$ 349,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Massagem relaxante</h4>
+                                        <h4 style="color: #202020;">R$ 149,99</h4>
                                     </div>
-                                    <p class="service-description">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
+                                    <p class="service-description">Uma massagem suave e tranquila projetada para aliviar o estresse, reduzir a tensão muscular e promover relaxamento geral.</p>
                                     <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Prancha</h4>
-                                        <h4>R$ 59,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Massagem terapêutica</h4>
+                                        <h4>R$ 159,99</h4>
                                     </div>
-                                    <p class="service-description">Alise seus cabelos para um visual elegante e polido.</p>
+                                    <p class="service-description">Uma massagem mais intensa, focada em áreas específicas do corpo que apresentam dor, tensão ou restrições de movimento, visando aliviar desconfortos musculares e promover a recuperação.</p>
                                     <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Penteados</h4>
-                                        <h4>R$ 199,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Massagem com pedras quentes</h4>
+                                        <h4>R$ 169,99</h4>
                                     </div>
-                                    <p class="service-description">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
+                                    <p class="service-description">Uma técnica de massagem onde pedras aquecidas são colocadas ao longo do corpo para relaxar os músculos, aumentar a circulação sanguínea e promover um profundo relaxamento.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Progressiva</h4>
-                                        <h4>R$ 269,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Massagem desportiva</h4>
+                                        <h4>R$ 189,99</h4>
                                     </div>
-                                    <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>
+                                    <p class="service-description">Uma massagem destinada a atletas e pessoas ativas, projetada para ajudar na recuperação muscular, melhorar a flexibilidade, prevenir lesões e aumentar o desempenho esportivo.</p>
                                   <p>..........................................................................................................................</p>
                                   <button style="font-weight: bold; margin-top:5%;" class="button buttonAgendar1">
                                     Agendar
@@ -461,7 +494,7 @@
                         <div class="about-thumb-2">
                             <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Escova.jpeg') }}" alt="img">
                             <div class="about-thumb-num">
-                                Progressivas
+                               Massagens técnicas
                             </div>
                         </div>
                     </div>
@@ -469,43 +502,43 @@
                     <div class="col-md-6 ">
                         <div style="" class="card-menu2">
                             <div class="card-header bg-transparent border-0">
-                                <h3 class="sec-title" style="color: #202020;">Escovas Progressivas</h3>
+                                <h3 class="sec-title" style="color: #202020;">Massagens Técnicas</h3>
                             </div>
 
                             <div class="card-body">
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Escova marroquina</h4>
-                                        <h4>R$ 349,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Massagem tailandesa</h4>
+                                        <h4>R$ 219,99</h4>
                                     </div>
-                                    <p class="service-description" style="color: #202020;">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
+                                    <p class="service-description" style="color: #202020;">Uma forma única de massagem que combina pressão profunda, alongamentos assistidos e acupressão para aliviar a tensão muscular, melhorar a flexibilidade e promover o equilíbrio energético.</p>
                                    <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Escova americana</h4>
-                                        <h4 style="color: #202020;">R$ 59,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Massagem de drenagem linfática</h4>
+                                        <h4 style="color: #202020;">R$ 159,99</h4>
                                     </div>
-                                    <p class="service-description" style="color: #202020;">Alise seus cabelos para um visual elegante e polido.</p>
+                                    <p class="service-description" style="color: #202020;">Uma técnica suave que visa estimular o sistema linfático, ajudando na eliminação de toxinas, redução do inchaço e melhora da circulação linfática.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Escova indiana</h4>
-                                        <h4 style="color: #202020;">R$ 199,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Massagem Shiatsu</h4>
+                                        <h4 style="color: #202020;">R$ 179,99</h4>
                                     </div>
-                                    <p class="service-description" style="color: #202020;">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
+                                    <p class="service-description" style="color: #202020;"> Uma forma tradicional de massagem japonesa que utiliza pressão aplicada com os dedos ao longo dos meridianos do corpo para aliviar tensões, restaurar o equilíbrio energético e promover o bem-estar geral.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Escova inteligente</h4>
-                                        <h4 style="color: #202020;">R$ 269,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Massagem de reflexologia</h4>
+                                        <h4 style="color: #202020;">R$ 149,99</h4>
                                     </div>
-                                    <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>
+                                    <p class="service-description">Uma técnica que se concentra na aplicação de pressão em pontos específicos dos pés, que correspondem a órgãos e sistemas do corpo, com o objetivo de promover o equilíbrio e a cura.</p>
                                   <p>..........................................................................................................................</p>
                                   <button style="font-weight: bold;  margin-top:5%;" class="button buttonAgendar2">
                                     Agendar
@@ -580,7 +613,7 @@
                         <div class="about-thumb-2">
                             <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Luzes.jpeg') }}" alt="img">
                             <div class="about-thumb-num">
-                                Cabelos Loiros
+                                Massagens aromaticas
                             </div>
                         </div>
                     </div>
@@ -588,25 +621,25 @@
                     <div class="col-md-6  order-xl-1">
                         <div class="card-menu">
                             <div class="card-header bg-transparent border-0">
-                                <h3 style="" class="sec-title">Luzes</h3>
+                                <h3 style="" class="sec-title">Massagens aromaticas</h3>
                             </div>
 
                             <div class="card-body">
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title">Luzes</h4>
-                                        <h4>R$ 349,99</h4>
+                                        <h4 class="service-title">Massagem para gestantes</h4>
+                                        <h4>R$ 179,99</h4>
                                     </div>
-                                    <p class="service-description">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
+                                    <p class="service-description">Uma massagem adaptada para atender às necessidades específicas das mulheres grávidas, visando aliviar o desconforto nas costas, pescoço e ombros, além de promover relaxamento e bem-estar geral.</p>
                                    <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title">Mechas</h4>
-                                        <h4>R$ 59,99</h4>
+                                        <h4 class="service-title">Massagem sueca</h4>
+                                        <h4>R$ 129,99</h4>
                                     </div>
-                                    <p class="service-description">Alise seus cabelos para um visual elegante e polido.</p>
+                                    <p class="service-description">Uma massagem clássica que combina movimentos suaves e firmes, como deslizamento, amassamento e fricção, para aliviar a tensão muscular, melhorar a circulação e promover relaxamento.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
@@ -621,10 +654,10 @@
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title">Ombré hair</h4>
-                                        <h4>R$ 269,99</h4>
+                                        <h4 class="service-title">Massagem com aromaterapia</h4>
+                                        <h4>R$ 149,99</h4>
                                     </div>
-                                    <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>
+                                    <p class="service-description">Uma massagem que combina os benefícios terapêuticos da massagem com os efeitos relaxantes e revigorantes dos óleos essenciais. Os óleos são escolhidos de acordo com as necessidades do cliente para promover relaxamento, alívio do estresse e bem-estar geral.</p>
                                   <p>..........................................................................................................................</p>
                                   <button style="font-weight: bold;  margin-top:5%;" class="button buttonAgendar3">
                                     Agendar

@@ -5,6 +5,38 @@
 @section('conteudo')
 
 <style>
+    @media (max-width: 700px){
+    .hero2{
+        height: 650px;
+    }
+
+    .hero-slider{
+        height: 550px;
+        background: url({{ asset('assets/banner/bannerRespons.jpeg') }});
+
+        background-size: cover;
+    }
+
+    .videoLeFLower{
+        display: none;
+    }
+
+    .hero-slider video{
+        display: none;
+    }
+
+    .logoVideo{
+        display: contents;
+    }
+
+    .hero-style2{
+        display: none;
+    }
+
+    .btn-flower{
+      margin-top: 130%;
+    }
+}
     .service-section {
       display: flex;
       flex-wrap: wrap;
@@ -244,7 +276,7 @@
  }
 
 
- @media (max-width: 700px) {
+ @media (max-width: 870px) {
       .about-thumb-2 img{
         display: none;
       }
@@ -292,7 +324,7 @@
     }
 
     .list-group a{
-      margin-bottom:2%;
+      margin-bottom:1%;
     }
 
     .list-group{
@@ -332,7 +364,7 @@
         ==============================-->
         <div class="" data-bg-src="assets/img/bg/about3-bg.png">
             <div class="text-center">
-                <span class="sub-title" style="font-size: 13pt">Cabelo</span>
+                <span class="sub-title" style="font-size: 13pt">Rosto</span>
             </div>
             <div class="container-fluid servico" style="display: flex;">
                 <div class="row gy-5 justify-content-center">
@@ -340,7 +372,7 @@
                         <div class="about-thumb-2">
                             <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Cabelo.jpeg') }}" alt="img">
                             <div class="about-thumb-num">
-                                Cabelos
+                                Rosto
                             </div>
                         </div>
                     </div>
@@ -348,43 +380,43 @@
                     <div class="col-md-6  order-xl-1">
                         <div class="card-menu">
                             <div class="card-header bg-transparent border-0">
-                                <h3 class="sec-title" style="color: #202020;">Menu de Serviços de Cabelo</h3>
+                                <h3 class="sec-title" style="color: #202020;">Menu de Serviços de Rosto</h3>
                             </div>
 
                             <div class="card-body">
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Luzes para Cabelo</h4>
-                                        <h4 style="color: #202020;">R$ 349,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Limpeza de Pele Profunda</h4>
+                                        <h4 style="color: #202020;">R$ 149,99</h4>
                                     </div>
-                                    <p class="service-description">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
+                                    <p class="service-description">Procedimento que remove impurezas, células mortas e excesso de oleosidade da pele, ajudando a prevenir acne e melhorar a textura e luminosidade da pele.</p>
                                     <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Prancha</h4>
-                                        <h4>R$ 59,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Peeling Facial</h4>
+                                        <h4>R$ 159,99</h4>
                                     </div>
-                                    <p class="service-description">Alise seus cabelos para um visual elegante e polido.</p>
+                                    <p class="service-description">Tratamento que utiliza ácidos ou substâncias esfoliantes para remover camadas superficiais da pele, estimulando a renovação celular e melhorando a aparência de manchas, rugas e cicatrizes.</p>
                                     <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Penteados</h4>
-                                        <h4>R$ 199,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Hidratação Facial</h4>
+                                        <h4>R$ 119,99</h4>
                                     </div>
-                                    <p class="service-description">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
+                                    <p class="service-description">Tratamento que repõe a hidratação da pele, utilizando produtos específicos para o tipo de pele do cliente, deixando-a mais macia, suave e com aspecto saudável.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Progressiva</h4>
-                                        <h4>R$ 269,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Remoção de Cravos e Espinhas</h4>
+                                        <h4>R$ 89,99</h4>
                                     </div>
-                                    <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>
+                                    <p class="service-description"> Procedimento que extrai comedões (cravos) e acne da pele, desobstruindo os poros e ajudando a prevenir o surgimento de novas lesões.</p>
                                   <p>..........................................................................................................................</p>
                                   <button style="font-weight: bold; margin-top:5%;" class="button buttonAgendar1">
                                     Agendar
@@ -460,7 +492,7 @@
                         <div class="about-thumb-2">
                             <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Escova.jpeg') }}" alt="img">
                             <div class="about-thumb-num">
-                                Progressivas
+                               Revitalização
                             </div>
                         </div>
                     </div>
@@ -468,13 +500,13 @@
                     <div class="col-md-6 ">
                         <div style="" class="card-menu2">
                             <div class="card-header bg-transparent border-0">
-                                <h3 class="sec-title" style="color: #202020;">Escovas Progressivas</h3>
+                                <h3 class="sec-title" style="color: #202020;">Rejuvenescimento e Revitalização</h3>
                             </div>
 
                             <div class="card-body">
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Escova marroquina</h4>
+                                        <h4 class="service-title" style="color: #202020;">Radiofrequência Facial</h4>
                                         <h4>R$ 349,99</h4>
                                     </div>
                                     <p class="service-description" style="color: #202020;">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
@@ -484,27 +516,27 @@
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
                                         <h4 class="service-title" style="color: #202020;">Escova americana</h4>
-                                        <h4 style="color: #202020;">R$ 59,99</h4>
+                                        <h4 style="color: #202020;">R$ 159,99</h4>
                                     </div>
-                                    <p class="service-description" style="color: #202020;">Alise seus cabelos para um visual elegante e polido.</p>
+                                    <p class="service-description" style="color: #202020;">Tratamento que utiliza ondas de radiofrequência para estimular a produção de colágeno, reduzir rugas e flacidez, e melhorar a textura da pele.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Escova indiana</h4>
+                                        <h4 class="service-title" style="color: #202020;">Microagulhamento</h4>
                                         <h4 style="color: #202020;">R$ 199,99</h4>
                                     </div>
-                                    <p class="service-description" style="color: #202020;">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
+                                    <p class="service-description" style="color: #202020;">Procedimento que utiliza um rolo com microagulhas para estimular a produção de colágeno, reduzir cicatrizes de acne, manchas e rugas.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Escova inteligente</h4>
-                                        <h4 style="color: #202020;">R$ 269,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Fototerapia Facial</h4>
+                                        <h4 style="color: #202020;">R$ 129,99</h4>
                                     </div>
-                                    <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>
+                                    <p class="service-description">Tratamento que utiliza luzes LED de diferentes cores para estimular a regeneração celular, reduzir a inflamação e melhorar a aparência geral da pele.</p>
                                   <p>..........................................................................................................................</p>
                                   <button style="font-weight: bold;  margin-top:5%;" class="button buttonAgendar2">
                                     Agendar
@@ -579,7 +611,7 @@
                         <div class="about-thumb-2">
                             <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Luzes.jpeg') }}" alt="img">
                             <div class="about-thumb-num">
-                                Cabelos Loiros
+                                Personalização e Cuidados
                             </div>
                         </div>
                     </div>
@@ -587,25 +619,25 @@
                     <div class="col-md-6  order-xl-1">
                         <div class="card-menu">
                             <div class="card-header bg-transparent border-0">
-                                <h3 style="" class="sec-title">Luzes</h3>
+                                <h3 style="" class="sec-title">Personalização e Cuidados Especiais</h3>
                             </div>
 
                             <div class="card-body">
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title">Luzes</h4>
-                                        <h4>R$ 349,99</h4>
+                                        <h4 class="service-title">Consulta Dermatológica</h4>
+                                        <h4>R$ 249,99</h4>
                                     </div>
-                                    <p class="service-description">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
+                                    <p class="service-description">Consulta com um dermatologista para avaliação da pele, diagnóstico de problemas dermatológicos e orientação sobre os melhores tratamentos e cuidados a serem seguidos.</p>
                                    <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title">Mechas</h4>
-                                        <h4>R$ 59,99</h4>
+                                        <h4 class="service-title">Tratamento para Olheiras</h4>
+                                        <h4>R$ 99,99</h4>
                                     </div>
-                                    <p class="service-description">Alise seus cabelos para um visual elegante e polido.</p>
+                                    <p class="service-description"> Protocolo específico para reduzir olheiras e bolsas ao redor dos olhos, utilizando produtos e técnicas que melhoram a circulação e hidratação da região.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
@@ -620,10 +652,10 @@
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title">Ombré hair</h4>
-                                        <h4>R$ 269,99</h4>
+                                        <h4 class="service-title">Depilação Facial</h4>
+                                        <h4>R$ 39,99</h4>
                                     </div>
-                                    <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>
+                                    <p class="service-description">Remoção de pelos indesejados na região do rosto, como buço e sobrancelhas, utilizando métodos como cera ou linha.</p>
                                   <p>..........................................................................................................................</p>
                                   <button style="font-weight: bold;  margin-top:5%;" class="button buttonAgendar3">
                                     Agendar

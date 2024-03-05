@@ -5,6 +5,38 @@
 @section('conteudo')
 
 <style>
+@media (max-width: 700px){
+    .hero2{
+        height: 650px;
+    }
+
+    .hero-slider{
+        height: 550px;
+        background: url({{ asset('assets/banner/bannerRespons.jpeg') }});
+        background-size: cover;
+    }
+
+    .videoLeFLower{
+        display: none;
+    }
+
+    .hero-slider video{
+        display: none;
+    }
+
+    .logoVideo{
+        display: contents;
+    }
+
+    .hero-style2{
+        display: none;
+    }
+
+    .btn-flower{
+      margin-top: 130%;
+    }
+}
+
     .service-section {
       display: flex;
       flex-wrap: wrap;
@@ -284,7 +316,7 @@
         ==============================-->
         <div class="" data-bg-src="assets/img/bg/about3-bg.png">
             <div class="text-center">
-                <span class="sub-title" style="font-size: 13pt">Cabelo</span>
+                <span class="sub-title" style="font-size: 13pt">Barbas</span>
             </div>
             <div class="container-fluid servico" style="display: flex;">
                 <div class="row gy-5 justify-content-center">
@@ -292,7 +324,7 @@
                         <div class="about-thumb-2">
                             <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Cabelo.jpeg') }}" alt="img">
                             <div class="about-thumb-num">
-                                Cabelos
+                                Barbas
                             </div>
                         </div>
                     </div>
@@ -300,44 +332,45 @@
                     <div class="col-md-6  order-xl-1">
                         <div class="card-menu">
                             <div class="card-header bg-transparent border-0">
-                                <h3 class="sec-title" style="color: #202020;">Menu de Serviços de Cabelo</h3>
+                                <h3 class="sec-title" style="color: #202020;">Menu de Serviços de Barba</h3>
                             </div>
 
                             <div class="card-body">
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Luzes para Cabelo</h4>
-                                        <h4 style="color: #202020;">R$ 349,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Corte de Barba</h4>
+                                        <h4 style="color: #202020;">R$ 49,99</h4>
                                     </div>
-                                    <p class="service-description">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
+                                    <p class="service-description">Serviço que inclui corte e modelagem da barba para manter um visual limpo e aparado, de acordo com as preferências do cliente.</p>
                                     <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Prancha</h4>
+                                        <h4 class="service-title" style="color: #202020;"> Barboterapia</h4>
                                         <h4>R$ 59,99</h4>
                                     </div>
-                                    <p class="service-description">Alise seus cabelos para um visual elegante e polido.</p>
+                                    <p class="service-description">Tratamento que combina corte de barba com técnicas de massagem no rosto, aplicação de produtos hidratantes e aromáticos para promover relaxamento e revitalização da pele.</p>
                                     <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Penteados</h4>
-                                        <h4>R$ 199,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Design de Barba</h4>
+                                        <h4>R$ 69,99</h4>
                                     </div>
-                                    <p class="service-description">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
+                                    <p class="service-description">Procedimento para criar um formato de barba personalizado, levando em consideração o formato do rosto e as preferências do cliente, com técnicas de corte e alinhamento precisas.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Progressiva</h4>
-                                        <h4>R$ 269,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Barba Completa</h4>
+                                        <h4>R$ 69,99</h4>
                                     </div>
-                                    <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>
+                                    <p class="service-description">Pacote que inclui corte, modelagem, alinhamento de linha do pescoço e aplicação de produtos de cuidados com a barba, proporcionando um visual completo e bem cuidado.</p>
                                   <p>..........................................................................................................................</p>
+                                  <a href="/cadastrar">
                                   <button style="font-weight: bold; margin-top:5%;" class="button buttonAgendar1">
                                     Agendar
                                     <div class="icon-1">
@@ -399,6 +432,7 @@
                                       </svg>
                                     </div>
                                   </button>
+                                  </a>
                                 </div>
                             </div>
                         </div>
@@ -412,7 +446,7 @@
                         <div class="about-thumb-2">
                             <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Escova.jpeg') }}" alt="img">
                             <div class="about-thumb-num">
-                                Progressivas
+                                Tratamentos Especiais
                             </div>
                         </div>
                     </div>
@@ -420,44 +454,45 @@
                     <div class="col-md-6 ">
                         <div style="" class="card-menu2">
                             <div class="card-header bg-transparent border-0">
-                                <h3 class="sec-title" style="color: #202020;">Escovas Progressivas</h3>
+                                <h3 class="sec-title" style="color: #202020;">Tratamentos Especiais</h3>
                             </div>
 
                             <div class="card-body">
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Escova marroquina</h4>
-                                        <h4>R$ 349,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Alisamento de Barba</h4>
+                                        <h4>R$ 79,99</h4>
                                     </div>
-                                    <p class="service-description" style="color: #202020;">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
+                                    <p class="service-description" style="color: #202020;">Técnica que utiliza produtos químicos ou naturais para alisar e domar os pelos da barba, proporcionando um visual mais uniforme e alinhado.</p>
                                    <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Escova americana</h4>
+                                        <h4 class="service-title" style="color: #202020;">Coloração de Barba</h4>
                                         <h4 style="color: #202020;">R$ 59,99</h4>
                                     </div>
-                                    <p class="service-description" style="color: #202020;">Alise seus cabelos para um visual elegante e polido.</p>
+                                    <p class="service-description" style="color: #202020;">Serviço que utiliza tinturas específicas para colorir os pelos da barba, cobrindo fios brancos ou adicionando nuances de cor para um visual mais vibrante.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Escova indiana</h4>
-                                        <h4 style="color: #202020;">R$ 199,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Tratamento para Crescimento de Barba</h4>
+                                        <h4 style="color: #202020;">R$ 109,99</h4>
                                     </div>
-                                    <p class="service-description" style="color: #202020;">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
+                                    <p class="service-description" style="color: #202020;">Protocolo que inclui aplicação de produtos estimulantes e técnicas de massagem para promover o crescimento e densidade dos pelos da barba.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title" style="color: #202020;">Escova inteligente</h4>
-                                        <h4 style="color: #202020;">R$ 269,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Design de Linha de Barba</h4>
+                                        <h4 style="color: #202020;">R$ 49,99</h4>
                                     </div>
-                                    <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>
+                                    <p class="service-description">Procedimento para definir e alinhar a linha da barba, criando contornos precisos e simétricos para um visual mais polido e elegante.</p>
                                   <p>..........................................................................................................................</p>
+                                  <a href="/cadastrar">
                                   <button style="font-weight: bold;  margin-top:5%;" class="button buttonAgendar2">
                                     Agendar
                                     <div class="icon-1">
@@ -518,6 +553,7 @@
                                       </svg>
                                     </div>
                                   </button>
+                                </a>
                                 </div>
                             </div>
                         </div>
@@ -531,7 +567,7 @@
                         <div class="about-thumb-2">
                             <img style="border-radius: 20px;height:650px;" class="about-img-1 img-fluid" src="{{ asset('assets/servicos/Luzes.jpeg') }}" alt="img">
                             <div class="about-thumb-num">
-                                Cabelos Loiros
+                                Personalização e Estilo
                             </div>
                         </div>
                     </div>
@@ -539,44 +575,45 @@
                     <div class="col-md-6  order-xl-1">
                         <div class="card-menu">
                             <div class="card-header bg-transparent border-0">
-                                <h3 style="" class="sec-title">Luzes</h3>
+                                <h3 style="" class="sec-title">Personalização e Estilo</h3>
                             </div>
 
                             <div class="card-body">
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title">Luzes</h4>
-                                        <h4>R$ 349,99</h4>
+                                        <h4 class="service-title">Barbearia Vintage</h4>
+                                        <h4>R$ 99,99</h4>
                                     </div>
-                                    <p class="service-description">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
+                                    <p class="service-description">Serviço exclusivo que oferece um ambiente retrô e clássico para os cuidados com a barba, proporcionando uma experiência autêntica e elegante.</p>
                                    <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title">Mechas</h4>
-                                        <h4>R$ 59,99</h4>
+                                        <h4 class="service-title">Barbearia Moderna:</h4>
+                                        <h4>R$ 119,99</h4>
                                     </div>
-                                    <p class="service-description">Alise seus cabelos para um visual elegante e polido.</p>
+                                    <p class="service-description">Barbearia contemporânea que oferece serviços inovadores e personalizados para os homens modernos, com técnicas de corte e estilo de última geração.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title">Californianas</h4>
-                                        <h4>R$ 199,99</h4>
+                                        <h4 class="service-title">Design de Barba Criativo</h4>
+                                        <h4>R$ 129,99</h4>
                                     </div>
-                                    <p class="service-description">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
+                                    <p class="service-description">Serviço especializado que permite ao cliente escolher designs exclusivos e criativos para sua barba, incluindo formas geométricas, linhas precisas e outros estilos personalizados.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title">Ombré hair</h4>
-                                        <h4>R$ 269,99</h4>
+                                        <h4 class="service-title">Tratamento Relaxante para Barba</h4>
+                                        <h4>R$ 139,99</h4>
                                     </div>
-                                    <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>
+                                    <p class="service-description">Pacote de tratamento completo que inclui limpeza facial, hidratação de barba e massagem relaxante no rosto, proporcionando momentos de tranquilidade e cuidado pessoal.</p>
                                   <p>..........................................................................................................................</p>
+                                  <a href="/cadastrar">
                                   <button style="font-weight: bold;  margin-top:5%;" class="button buttonAgendar3">
                                     Agendar
                                     <div class="icon-1">
@@ -637,6 +674,7 @@
                                       </svg>
                                     </div>
                                   </button>
+                                  </a>
                                                 </div>
                                             </div>
                                         </div>

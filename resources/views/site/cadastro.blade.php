@@ -247,7 +247,7 @@ a:hover{
            		   		<i class="fas fa-user"></i>
            		   </div>
            		   <div class="div">
-           		   		<input type="text" name="nomeUsuario" id="nomeUsuario" class="input" placeholder="Nome Completo">
+           		   		<input type="text" name="nomeUsuarioRegistro" id="nomeUsuario" class="input" placeholder="Nome Completo">
            		   </div>
            		</div>
 
@@ -256,7 +256,7 @@ a:hover{
                          <i class="fas fa-lock"></i>
                     </div>
                     <div class="div">
-                         <input type="password" name="senhaUsuario" id="senhaUsuario" class="input" placeholder="Senha">
+                         <input type="password" name="senhaUsuarioRegistro" id="senhaUsuario" class="input" placeholder="Senha">
                     </div>
                 </div>
                    <div class="input-div one">
@@ -264,7 +264,7 @@ a:hover{
                             <i class="fas fa-envelope"></i>
                     </div>
                     <div class="div">
-                            <input type="text" class="input" name="emailUsuario" id="emailUsuario" placeholder="Email">
+                            <input type="text" class="input" name="emailUsuarioRegistro" id="emailUsuarioRegistro" placeholder="Email">
                     </div>
                  </div>
                  <div class="input-div one">
@@ -272,7 +272,7 @@ a:hover{
                             <i class="fas fa-mobile"></i>
                     </div>
                     <div class="div">
-                            <input type="text" class="input" name="telefoneUsuario" id="telefoneUsuario" placeholder="Telefone">
+                            <input type="text" class="input" name="telefoneUsuarioRegistro" id="telefoneUsuario" placeholder="Telefone">
                     </div>
                  </div>
 
@@ -284,6 +284,19 @@ a:hover{
 
         </div>
     </div>
+
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+
+
+
     <script src="{{ asset('js/scriptCadastro.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/mainlogin.js') }}"></script>
 </body>
