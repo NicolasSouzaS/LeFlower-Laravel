@@ -88,7 +88,7 @@
   --smoke-color5: #F0F2F4;
   --black-color: #202020;
   --gray-color: #303030;
-  --white-color:#202020;
+  --white-color:#ffffff;
   --light-color: #9fa2ad;
   --yellow-color: #FFB539;
   --success-color: #28a745;
@@ -2462,7 +2462,7 @@ textarea.is-invalid {
   font-family: var(--title-font);
   margin-bottom: 26px;
   letter-spacing: 0.05em;
-  background: var(--white-color);
+  background: var(--black-color);
   box-shadow: 0px 8px 19px rgba(0, 0, 0, 0.07);
   border-radius: 50px;
 }

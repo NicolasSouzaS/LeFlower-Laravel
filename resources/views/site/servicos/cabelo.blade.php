@@ -54,7 +54,7 @@
     }
 
     .service h4{
-        color: white;
+        color: #202020;
     }
 
     .service-description{
@@ -108,7 +108,41 @@
 
 
 
-    @media (max-width: 700px) {
+   
+
+   
+    .selecao{
+        height: 600px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .list-group{
+        justify-content: space-between;
+        height: 100%;
+        text-align: center;
+        font-weight: bold;
+    }
+    .list-group-item{
+        width: 400px;
+        border-radius: 20px;
+    }
+
+    .buttonCat {
+    height: 50px;
+    width: 350px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #202020;
+    overflow: hidden;
+    border-radius: 30px;
+    color: #202020;
+    transition: all 0.5s ease-in-out;
+
+    
+ }
+
+ @media (max-width: 700px) {
       .about-thumb-2 img{
         display: none;
       }
@@ -149,99 +183,20 @@
         font-size: 20pt;
         text-align: center;
     }
-
-
+    .selecao {
+    height: 230px;
+    display: block;
+    margin-bottom: 250px;
     }
 
-    @media (min-width: 701px) and (max-width:1024px){
-
-    .about-thumb-2 img{
-        display: none;
-      }
-
-      .about-thumb-num{
-        display: none;
-      }
-
-      .servico{
-        padding: 0% 0% 0% 0%;
-      }
-
-      .service p{
-        font-size: 17pt
-      }
-
-      .service{
-        width: 700px;
-      }
-
-      .card-menu2{
-        margin-left:0%;
-      }
-
-     .buttonAgendar1{
-        margin-right:0%;
-        margin-left: 3.5%;
-     }
-
-     .buttonAgendar2{
-        margin-left:0%;
-        margin-left: 3%;
-
-    }
-
-    .buttonAgendar3{
-        margin-right:0%;
-        margin-left: 3.5%;
-
-    }
-
-    .container1{
-        display: none;
-    }
-    .container2{
-        display: none;
-    }
-    .container3{
-        display: none;
-    }
-    .col-md-6 {
-        width: 100%;
-    }
-
-    .card-header h3{
-        text-align: center;
-    }
-    }
-
-    .selecao{
-        height: 600px;
-        display: flex;
-        justify-content: space-around;
+    .list-group a{
+      margin-bottom:2%;
     }
     .list-group{
-        justify-content: space-between;
-        height: 100%;
-        text-align: center;
-        font-weight: bold;
-    }
-    .list-group-item{
-        width: 400px;
-        border-radius: 20px;
+      align-items:center;
     }
 
-    .buttonCat {
-    height: 50px;
-    width: 350px;
-    position: relative;
-    background-color: transparent;
-    cursor: pointer;
-    border: 2px solid #202020;
-    overflow: hidden;
-    border-radius: 30px;
-    color: #202020;
-    transition: all 0.5s ease-in-out;
- }
+    }
 
     </style>
    <div style="margin-top: 5%;" class="row justify-content-center">

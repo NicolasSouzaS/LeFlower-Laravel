@@ -37,7 +37,7 @@
 
     .service p {
       margin: 10px 0;
-      color: gainsboro;
+      color: #202020;
     }
 
     .price {
@@ -54,11 +54,11 @@
     }
 
     .service h4{
-        color: white;
+        color: #202020;
     }
 
     .service-description{
-        color: gainsboro;
+        color: #202020;
         text-align: start;
     }
 
@@ -230,33 +230,98 @@
         border-radius: 20px;
     }
 
+    .buttonCat {
+    height: 50px;
+    width: 350px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #202020;
+    overflow: hidden;
+    border-radius: 30px;
+    color: #202020;
+    transition: all 0.5s ease-in-out;
+ }
+
+
+ @media (max-width: 700px) {
+      .about-thumb-2 img{
+        display: none;
+      }
+
+      .about-thumb-num{
+        display: none;
+      }
+
+      .servico{
+        padding: 0% 0% 0% 0%;
+      }
+
+      .service p{
+        font-size: 8pt
+      }
+
+      .service{
+        width: 100%;
+      }
+
+      .card-menu2{
+        margin-left:0%;
+      }
+
+     .buttonAgendar1{
+        margin-right:0%;
+     }
+
+     .buttonAgendar2{
+        margin-left:0%;
+    }
+
+    .buttonAgendar3{
+        margin-right:0%;
+    }
+
+    .card-header h3{
+        font-size: 20pt;
+        text-align: center;
+    }
+    .selecao {
+    height: 230px;
+    display: block;
+    margin-bottom: 250px;
+    }
+
+    .list-group a{
+      margin-bottom:2%;
+    }
+
+    .list-group{
+      align-items:center;
+    }
+    }
     </style>
    <div style="margin-top: 5%;" class="row justify-content-center">
         <div class="col-xl-6 col-lg-8 text-center">
             <div class="title-area text-center">
                 <span class="sub-title text-theme2">CATEGORIAS</span>
-                <h2 style="color: white;" class="sec-title">Selecione a categoria</h2>
+                <h2 style="color: #202020;" class="sec-title">Selecione a categoria</h2>
             </div>
         </div>
     </div>
     <section class="selecao">
         <div class="list-group">
-            <a href="/servico/cabelos" class="list-group-item list-group-item-action active" aria-current="true">
-              Cabelos
+            <a href="/servico/cabelos" class="" aria-current="true">
+                <button class="buttonCat type1">Cabelos</button>
             </a>
-            <a href="/servico/maquiagens" class="list-group-item list-group-item-action">Maquiagens</a>
-            <a href="/servico/unhas" class="list-group-item list-group-item-action">Unhas</a>
-            <a href="/servico/sobrancelhas" class="list-group-item list-group-item-action">Sobrancelhas</a>
-            <a href="/servico/cilios" class="list-group-item list-group-item-action">Cílios</a>
+            <a href="/servico/maquiagens" class=""><button class="buttonCat type1">Maquiagens</button></a>
+            <a href="/servico/unhas" class=""><button class="buttonCat type1">Unhas</button></a>
+            <a href="/servico/sobrancelhas" class=""><button class="buttonCat type1">Sobrancelhas</button></a>
           </div>
         <div class="list-group">
-            <a href="/servico/cabelos" class="list-group-item list-group-item-action">
-              Cabelos
-            </a>
-            <a href="/servico/depilacao" class="list-group-item list-group-item-action">Depilações</a>
-            <a href="/servico/massagens" class="list-group-item list-group-item-action">Massagens</a>
-            <a href="/servico/rosto" class="list-group-item list-group-item-action">Rosto</a>
-            <a href="/servico/barbas" class="list-group-item list-group-item-action">Barba</a>
+            <a href="/servico/depilacao" class=""><button class="buttonCat type1">Depilações</button></a>
+            <a href="/servico/massagens" class=""><button class="buttonCat type1">Massagens</button></a>
+            <a href="/servico/rosto" class=""><button class="buttonCat type1">Rosto</button></a>
+            <a href="/servico/barbas" class=""><button class="buttonCat type1">Barbas</button></a>
           </div>
     </section>
 
@@ -283,14 +348,14 @@
                     <div class="col-md-6  order-xl-1">
                         <div class="card-menu">
                             <div class="card-header bg-transparent border-0">
-                                <h3 class="sec-title text-white">Menu de Serviços de Cabelo</h3>
+                                <h3 class="sec-title" style="color: #202020;">Menu de Serviços de Cabelo</h3>
                             </div>
 
                             <div class="card-body">
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title text-white">Luzes para Cabelo</h4>
-                                        <h4>R$ 349,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Luzes para Cabelo</h4>
+                                        <h4 style="color: #202020;">R$ 349,99</h4>
                                     </div>
                                     <p class="service-description">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
                                     <p class="pontos">...........................................................................................................................</p>
@@ -298,7 +363,7 @@
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title text-white">Prancha</h4>
+                                        <h4 class="service-title" style="color: #202020;">Prancha</h4>
                                         <h4>R$ 59,99</h4>
                                     </div>
                                     <p class="service-description">Alise seus cabelos para um visual elegante e polido.</p>
@@ -307,7 +372,7 @@
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title text-white">Penteados</h4>
+                                        <h4 class="service-title" style="color: #202020;">Penteados</h4>
                                         <h4>R$ 199,99</h4>
                                     </div>
                                     <p class="service-description">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
@@ -316,7 +381,7 @@
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title text-white">Progressiva</h4>
+                                        <h4 class="service-title" style="color: #202020;">Progressiva</h4>
                                         <h4>R$ 269,99</h4>
                                     </div>
                                     <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>
@@ -403,41 +468,41 @@
                     <div class="col-md-6 ">
                         <div style="" class="card-menu2">
                             <div class="card-header bg-transparent border-0">
-                                <h3 class="sec-title text-white">Escovas Progressivas</h3>
+                                <h3 class="sec-title" style="color: #202020;">Escovas Progressivas</h3>
                             </div>
 
                             <div class="card-body">
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title text-white">Escova marroquina</h4>
+                                        <h4 class="service-title" style="color: #202020;">Escova marroquina</h4>
                                         <h4>R$ 349,99</h4>
                                     </div>
-                                    <p class="service-description">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
+                                    <p class="service-description" style="color: #202020;">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
                                    <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title text-white">Escova americana</h4>
-                                        <h4>R$ 59,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Escova americana</h4>
+                                        <h4 style="color: #202020;">R$ 59,99</h4>
                                     </div>
-                                    <p class="service-description">Alise seus cabelos para um visual elegante e polido.</p>
+                                    <p class="service-description" style="color: #202020;">Alise seus cabelos para um visual elegante e polido.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title text-white">Escova indiana</h4>
-                                        <h4>R$ 199,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Escova indiana</h4>
+                                        <h4 style="color: #202020;">R$ 199,99</h4>
                                     </div>
-                                    <p class="service-description">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
+                                    <p class="service-description" style="color: #202020;">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
                                  <p class="pontos">...........................................................................................................................</p>
                                 </div>
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title text-white">Escova inteligente</h4>
-                                        <h4>R$ 269,99</h4>
+                                        <h4 class="service-title" style="color: #202020;">Escova inteligente</h4>
+                                        <h4 style="color: #202020;">R$ 269,99</h4>
                                     </div>
                                     <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>
                                   <p>..........................................................................................................................</p>
@@ -522,13 +587,13 @@
                     <div class="col-md-6  order-xl-1">
                         <div class="card-menu">
                             <div class="card-header bg-transparent border-0">
-                                <h3 style="" class="sec-title text-white">Luzes</h3>
+                                <h3 style="" class="sec-title">Luzes</h3>
                             </div>
 
                             <div class="card-body">
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title text-white">Luzes</h4>
+                                        <h4 class="service-title">Luzes</h4>
                                         <h4>R$ 349,99</h4>
                                     </div>
                                     <p class="service-description">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
@@ -537,7 +602,7 @@
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title text-white">Mechas</h4>
+                                        <h4 class="service-title">Mechas</h4>
                                         <h4>R$ 59,99</h4>
                                     </div>
                                     <p class="service-description">Alise seus cabelos para um visual elegante e polido.</p>
@@ -546,7 +611,7 @@
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title text-white">Californianas</h4>
+                                        <h4 class="service-title">Californianas</h4>
                                         <h4>R$ 199,99</h4>
                                     </div>
                                     <p class="service-description">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
@@ -555,7 +620,7 @@
 
                                 <div class="service">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="service-title text-white">Ombré hair</h4>
+                                        <h4 class="service-title">Ombré hair</h4>
                                         <h4>R$ 269,99</h4>
                                     </div>
                                     <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>

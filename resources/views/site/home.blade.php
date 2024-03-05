@@ -36,7 +36,7 @@
 
 .service p {
   margin: 10px 0;
-  color: gainsboro;
+  color: #202020;
 }
 
 .price {
@@ -53,7 +53,7 @@
 }
 
 .service h4{
-    color: white;
+    color: #202020;
 }
 
 .service-description{
@@ -149,6 +149,11 @@
     text-align: center;
 }
 
+.selecao {
+    height: 200px;
+    display: block;
+    margin-bottom: 250px;
+}
 
 }
 
@@ -211,6 +216,65 @@
 .card-header h3{
     text-align: center;
 }
+
+@media (max-width: 700px) {
+      .about-thumb-2 img{
+        display: none;
+      }
+
+      .about-thumb-num{
+        display: none;
+      }
+
+      .servico{
+        padding: 0% 0% 0% 0%;
+      }
+
+      .service p{
+        font-size: 8pt
+      }
+
+      .service{
+        width: 100%;
+      }
+
+      .card-menu2{
+        margin-left:0%;
+      }
+
+     .buttonAgendar1{
+        margin-right:0%;
+     }
+
+     .buttonAgendar2{
+        margin-left:0%;
+    }
+
+    .buttonAgendar3{
+        margin-right:0%;
+    }
+
+    .card-header h3{
+        font-size: 20pt;
+        text-align: center;
+    }
+    .selecao {
+    height: 230px;
+    display: block;
+    margin-bottom: 250px;
+    }
+
+    .list-group a{
+      margin-bottom:2%;
+    }
+    .list-group{
+      align-items:center;
+    }
+
+    }
+
+
+
 }
 
 .about-thumb-num {
@@ -250,13 +314,13 @@
                 <div class="col-md-6  order-xl-1">
                     <div class="card-menu">
                         <div class="card-header bg-transparent border-0">
-                            <h3 class="sec-title text-white">Menu de Serviços de Cabelo</h3>
+                            <h3 class="sec-title">Menu de Serviços de Cabelo</h3>
                         </div>
 
                         <div class="card-body">
                             <div class="service">
                                 <div class="d-flex justify-content-between">
-                                    <h4 class="service-title text-white">Luzes para Cabelo</h4>
+                                    <h4 class="service-title">Luzes para Cabelo</h4>
                                     <h4>R$ 349,99</h4>
                                 </div>
                                 <p class="service-description">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
@@ -265,7 +329,7 @@
 
                             <div class="service">
                                 <div class="d-flex justify-content-between">
-                                    <h4 class="service-title text-white">Prancha</h4>
+                                    <h4 class="service-title">Prancha</h4>
                                     <h4>R$ 59,99</h4>
                                 </div>
                                 <p class="service-description">Alise seus cabelos para um visual elegante e polido.</p>
@@ -274,7 +338,7 @@
 
                             <div class="service">
                                 <div class="d-flex justify-content-between">
-                                    <h4 class="service-title text-white">Penteados</h4>
+                                    <h4 class="service-title">Penteados</h4>
                                     <h4>R$ 199,99</h4>
                                 </div>
                                 <p class="service-description">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
@@ -283,7 +347,7 @@
 
                             <div class="service">
                                 <div class="d-flex justify-content-between">
-                                    <h4 class="service-title text-white">Progressiva</h4>
+                                    <h4 class="service-title">Progressiva</h4>
                                     <h4>R$ 269,99</h4>
                                 </div>
                                 <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>
@@ -374,13 +438,13 @@
                 <div class="col-md-6 ">
                     <div style="" class="card-menu2">
                         <div class="card-header bg-transparent border-0">
-                            <h3 class="sec-title text-white">Menu de Serviços de Unhas</h3>
+                            <h3 class="sec-title">Menu de Serviços de Unhas</h3>
                         </div>
 
                         <div class="card-body">
                             <div class="service">
                                 <div class="d-flex justify-content-between">
-                                    <h4 class="service-title text-white">Luzes para Cabelo</h4>
+                                    <h4 class="service-title">Luzes para Cabelo</h4>
                                     <h4>R$ 349,99</h4>
                                 </div>
                                 <p class="service-description">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
@@ -389,7 +453,7 @@
 
                             <div class="service">
                                 <div class="d-flex justify-content-between">
-                                    <h4 class="service-title text-white">Prancha</h4>
+                                    <h4 class="service-title">Prancha</h4>
                                     <h4>R$ 59,99</h4>
                                 </div>
                                 <p class="service-description">Alise seus cabelos para um visual elegante e polido.</p>
@@ -398,7 +462,7 @@
 
                             <div class="service">
                                 <div class="d-flex justify-content-between">
-                                    <h4 class="service-title text-white">Penteados</h4>
+                                    <h4 class="service-title">Penteados</h4>
                                     <h4>R$ 199,99</h4>
                                 </div>
                                 <p class="service-description">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
@@ -407,7 +471,7 @@
 
                             <div class="service">
                                 <div class="d-flex justify-content-between">
-                                    <h4 class="service-title text-white">Progressiva</h4>
+                                    <h4 class="service-title">Progressiva</h4>
                                     <h4>R$ 269,99</h4>
                                 </div>
                                 <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>
@@ -497,13 +561,13 @@
                 <div class="col-md-6  order-xl-1">
                     <div class="card-menu">
                         <div class="card-header bg-transparent border-0">
-                            <h3 class="sec-title text-white">Menu de Serviços de Cabelo</h3>
+                            <h3 class="sec-title">Menu de Serviços de Cabelo</h3>
                         </div>
 
                         <div class="card-body">
                             <div class="service">
                                 <div class="d-flex justify-content-between">
-                                    <h4 class="service-title text-white">Luzes para Cabelo</h4>
+                                    <h4 class="service-title">Luzes para Cabelo</h4>
                                     <h4>R$ 349,99</h4>
                                 </div>
                                 <p class="service-description">Transforme seu visual adicionando dimensão, brilho e profundidade aos seus fios.</p>
@@ -512,7 +576,7 @@
 
                             <div class="service">
                                 <div class="d-flex justify-content-between">
-                                    <h4 class="service-title text-white">Prancha</h4>
+                                    <h4 class="service-title">Prancha</h4>
                                     <h4>R$ 59,99</h4>
                                 </div>
                                 <p class="service-description">Alise seus cabelos para um visual elegante e polido.</p>
@@ -521,7 +585,7 @@
 
                             <div class="service">
                                 <div class="d-flex justify-content-between">
-                                    <h4 class="service-title text-white">Penteados</h4>
+                                    <h4 class="service-title">Penteados</h4>
                                     <h4>R$ 199,99</h4>
                                 </div>
                                 <p class="service-description">Escolha entre uma variedade de estilos para ocasiões especiais ou do dia a dia.</p>
@@ -530,7 +594,7 @@
 
                             <div class="service">
                                 <div class="d-flex justify-content-between">
-                                    <h4 class="service-title text-white">Progressiva</h4>
+                                    <h4 class="service-title">Progressiva</h4>
                                     <h4>R$ 269,99</h4>
                                 </div>
                                 <p class="service-description">Reduza o volume e obtenha cabelos lisos e sedosos com nosso tratamento de progressiva.</p>
